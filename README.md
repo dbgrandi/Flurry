@@ -1,4 +1,0 @@
-Flurry
-======
-
-Latest Flurry SDK
