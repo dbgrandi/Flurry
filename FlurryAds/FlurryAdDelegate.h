@@ -29,7 +29,7 @@ typedef enum {
  *  For additional information on how to use Flurry's Ads SDK to
  *  attract high-quality users and monetize your user base see <a href="http://wiki.flurry.com/index.php?title=Publisher">Support Center - Publisher</a>.
  *  @author 2010 - 2013 Flurry, Inc. All Rights Reserved.
- *  @version 4.2.4
+ *  @version 4.3.0
  * 
  */
 @protocol FlurryAdDelegate <NSObject>

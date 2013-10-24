@@ -27,7 +27,7 @@ typedef enum {
  *  attract high-quality users and monetize your user base see <a href="http://support.flurry.com/index.php?title=Publishers">Support Center - Publishers</a>.
  *  
  *  @author 2009 - 2013 Flurry, Inc. All Rights Reserved.
- *  @version 4.2.4
+ *  @version 4.3.0
  * 
  */
 @interface FlurryAds : NSObject {
