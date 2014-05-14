@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['logallpageviews_3a',['logAllPageViews:',['../interface_flurry.html#a47f6ff842684dd2f18a723cfe3df85ba',1,'Flurry']]],
+  ['logallpageviews_3a',['logAllPageViews:',['../interface_flurry.html#a8e75ee91fbed799971dfe2b11719802f',1,'Flurry']]],
+  ['logallpageviewsfortarget_3a',['logAllPageViewsForTarget:',['../interface_flurry.html#ad8222c3e2257fb8aa22e9c93aa465ca6',1,'Flurry']]],
   ['logerror_3amessage_3aerror_3a',['logError:message:error:',['../interface_flurry.html#ae937294c559758cdcba67be720fe4f04',1,'Flurry']]],
   ['logerror_3amessage_3aexception_3a',['logError:message:exception:',['../interface_flurry.html#a13309d1a6fb5777d9ba6fb85df47e558',1,'Flurry']]],
   ['logevent_3a',['logEvent:',['../interface_flurry.html#a5433aaf247d3e14120ba05877d034a61',1,'Flurry']]],

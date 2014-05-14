@@ -11,7 +11,6 @@ var searchData=
   ['setkeywordsfortargeting_3a',['setKeywordsForTargeting:',['../interface_flurry_ads.html#ab20cb7f809e23a2a3a4984f6759144bc',1,'FlurryAds']]],
   ['setlatitude_3alongitude_3ahorizontalaccuracy_3averticalaccuracy_3a',['setLatitude:longitude:horizontalAccuracy:verticalAccuracy:',['../interface_flurry.html#a01ee271623f6df7af9cf3e97139136b3',1,'Flurry']]],
   ['setloglevel_3a',['setLogLevel:',['../interface_flurry.html#ab717465e705b23c80253dddae321f5bc',1,'Flurry']]],
-  ['setpushtoken_3a',['setPushToken:',['../interface_flurry.html#a94dc629b8d3a4aa7ba0e1c45fd931ce0',1,'Flurry']]],
   ['setsecuretransportenabled_3a',['setSecureTransportEnabled:',['../interface_flurry.html#a085d6860e85344caa6c7ee201f2bc953',1,'Flurry']]],
   ['setsessioncontinueseconds_3a',['setSessionContinueSeconds:',['../interface_flurry.html#a1b79d4d804074f4b66f3434d9318ceee',1,'Flurry']]],
   ['setsessionreportsoncloseenabled_3a',['setSessionReportsOnCloseEnabled:',['../interface_flurry.html#ad2d1040528d4b57f0d879b2f66162dfe',1,'Flurry']]],
@@ -33,5 +32,6 @@ var searchData=
   ['spacewillexpand_3a',['spaceWillExpand:',['../protocol_flurry_ad_delegate-p.html#ab10225490cbe9a79bbb716291100e85d',1,'FlurryAdDelegate-p']]],
   ['spacewillleaveapplication_3a',['spaceWillLeaveApplication:',['../protocol_flurry_ad_delegate-p.html#aff0b7c92964bdb8568985c61cad696b3',1,'FlurryAdDelegate-p']]],
   ['startsession_3a',['startSession:',['../interface_flurry.html#aeadfa23545c392ffd46db448b6a95809',1,'Flurry']]],
-  ['startsession_3awithoptions_3a',['startSession:withOptions:',['../interface_flurry.html#a0033dc0a7acc00c9a10b19655be47aac',1,'Flurry']]]
+  ['startsession_3awithoptions_3a',['startSession:withOptions:',['../interface_flurry.html#a0033dc0a7acc00c9a10b19655be47aac',1,'Flurry']]],
+  ['stoplogpageviewsfortarget_3a',['stopLogPageViewsForTarget:',['../interface_flurry.html#a732b380542c75c2f12d6ec90b9959aeb',1,'Flurry']]]
 ];
