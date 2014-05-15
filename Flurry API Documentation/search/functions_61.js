@@ -1,6 +1,8 @@
 var searchData=
 [
   ['addcustomadnetwork_3awithproperties_3a',['addCustomAdNetwork:withProperties:',['../interface_flurry_ads.html#a063d0cab730df7a5f632d4744c2c435b',1,'FlurryAds']]],
+  ['addorigin_3awithversion_3a',['addOrigin:withVersion:',['../interface_flurry.html#a0051bbff585708b7b17dfbd10f485abd',1,'Flurry']]],
+  ['addorigin_3awithversion_3awithparameters_3a',['addOrigin:withVersion:withParameters:',['../interface_flurry.html#a928b07baaee4262f675f4727ba0938b5',1,'Flurry']]],
   ['adreadyforspace_3a',['adReadyForSpace:',['../interface_flurry_ads.html#a1f87cd568f71e77a9c89264b165d2164',1,'FlurryAds']]],
   ['appspotaccelerometerenabled',['appSpotAccelerometerEnabled',['../protocol_flurry_ad_delegate-p.html#ab1c2a4bc194dabf7ce973efa0e42beff',1,'FlurryAdDelegate-p']]],
   ['appspotadmobpublisherid',['appSpotAdMobPublisherID',['../protocol_flurry_ad_delegate-p.html#a957280502a3ecce580a35e756937cdd1',1,'FlurryAdDelegate-p']]],

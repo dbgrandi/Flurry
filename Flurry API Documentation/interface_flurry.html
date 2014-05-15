@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>Flurry iOS 4.4.0: Flurry Class Reference</title>
+<title>Flurry iOS 5.0.0: Flurry Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Flurry iOS 4.4.0
+   <div id="projectname">Flurry iOS 5.0.0
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -107,6 +107,12 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a57e18dc7c992272e3dc89e7f3bc853f4"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a57e18dc7c992272e3dc89e7f3bc853f4">pauseBackgroundSession</a></td></tr>
 <tr class="memdesc:a57e18dc7c992272e3dc89e7f3bc853f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pauses a <a class="el" href="interface_flurry.html">Flurry</a> session left running in background.  <a href="#a57e18dc7c992272e3dc89e7f3bc853f4">More...</a><br/></td></tr>
 <tr class="separator:a57e18dc7c992272e3dc89e7f3bc853f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0051bbff585708b7b17dfbd10f485abd"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a0051bbff585708b7b17dfbd10f485abd">addOrigin:withVersion:</a></td></tr>
+<tr class="memdesc:a0051bbff585708b7b17dfbd10f485abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an SDK origin specified by <code>originName</code> and <code>originVersion</code>.  <a href="#a0051bbff585708b7b17dfbd10f485abd">More...</a><br/></td></tr>
+<tr class="separator:a0051bbff585708b7b17dfbd10f485abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928b07baaee4262f675f4727ba0938b5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a928b07baaee4262f675f4727ba0938b5">addOrigin:withVersion:withParameters:</a></td></tr>
+<tr class="memdesc:a928b07baaee4262f675f4727ba0938b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a custom parameterized origin specified by <code>originName</code> with <code>originVersion</code> and <code>parameters</code>.  <a href="#a928b07baaee4262f675f4727ba0938b5">More...</a><br/></td></tr>
+<tr class="separator:a928b07baaee4262f675f4727ba0938b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Pre-Session Calls</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Optional sdk settings that should be called before start session. </p>
 </div></td></tr>
@@ -161,9 +167,15 @@ Class Methods</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Page View Methods</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Count page views. </p>
 </div></td></tr>
-<tr class="memitem:a47f6ff842684dd2f18a723cfe3df85ba"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a47f6ff842684dd2f18a723cfe3df85ba">logAllPageViews:</a></td></tr>
-<tr class="memdesc:a47f6ff842684dd2f18a723cfe3df85ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically track page views on a <code>UINavigationController</code> or <code>UITabBarController</code>.  <a href="#a47f6ff842684dd2f18a723cfe3df85ba">More...</a><br/></td></tr>
-<tr class="separator:a47f6ff842684dd2f18a723cfe3df85ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e75ee91fbed799971dfe2b11719802f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a8e75ee91fbed799971dfe2b11719802f">logAllPageViews:</a></td></tr>
+<tr class="memdesc:a8e75ee91fbed799971dfe2b11719802f"><td class="mdescLeft">&#160;</td><td class="mdescRight">see +(void)<a class="el" href="interface_flurry.html#ad8222c3e2257fb8aa22e9c93aa465ca6" title="Automatically track page views on a UINavigationController or UITabBarController.">logAllPageViewsForTarget:</a>target; for details  <a href="#a8e75ee91fbed799971dfe2b11719802f">More...</a><br/></td></tr>
+<tr class="separator:a8e75ee91fbed799971dfe2b11719802f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8222c3e2257fb8aa22e9c93aa465ca6"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#ad8222c3e2257fb8aa22e9c93aa465ca6">logAllPageViewsForTarget:</a></td></tr>
+<tr class="memdesc:ad8222c3e2257fb8aa22e9c93aa465ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatically track page views on a <code>UINavigationController</code> or <code>UITabBarController</code>.  <a href="#ad8222c3e2257fb8aa22e9c93aa465ca6">More...</a><br/></td></tr>
+<tr class="separator:ad8222c3e2257fb8aa22e9c93aa465ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732b380542c75c2f12d6ec90b9959aeb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a732b380542c75c2f12d6ec90b9959aeb">stopLogPageViewsForTarget:</a></td></tr>
+<tr class="memdesc:a732b380542c75c2f12d6ec90b9959aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops logging page views on previously observed with logAllPageViewsForTarget: <code>UINavigationController</code> or <code>UITabBarController</code>.  <a href="#a732b380542c75c2f12d6ec90b9959aeb">More...</a><br/></td></tr>
+<tr class="separator:a732b380542c75c2f12d6ec90b9959aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a612da8f1557fa0e29d50640400d896ec"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a612da8f1557fa0e29d50640400d896ec">logPageView</a></td></tr>
 <tr class="memdesc:a612da8f1557fa0e29d50640400d896ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly track a page view during a session.  <a href="#a612da8f1557fa0e29d50640400d896ec">More...</a><br/></td></tr>
 <tr class="separator:a612da8f1557fa0e29d50640400d896ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,11 +212,109 @@ Class Methods</h2></td></tr>
 <tr class="memitem:a75fc84e73c7e2d703311991508379407"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a75fc84e73c7e2d703311991508379407">setEventLoggingEnabled:</a></td></tr>
 <tr class="memdesc:a75fc84e73c7e2d703311991508379407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable custom event logging.  <a href="#a75fc84e73c7e2d703311991508379407">More...</a><br/></td></tr>
 <tr class="separator:a75fc84e73c7e2d703311991508379407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94dc629b8d3a4aa7ba0e1c45fd931ce0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a94dc629b8d3a4aa7ba0e1c45fd931ce0">setPushToken:</a></td></tr>
-<tr class="memdesc:a94dc629b8d3a4aa7ba0e1c45fd931ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set device push token.  <a href="#a94dc629b8d3a4aa7ba0e1c45fd931ce0">More...</a><br/></td></tr>
-<tr class="separator:a94dc629b8d3a4aa7ba0e1c45fd931ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a0051bbff585708b7b17dfbd10f485abd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) addOrigin: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>originName</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withVersion:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>originVersion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds an SDK origin specified by <code>originName</code> and <code>originVersion</code>. </p>
+<dl class="section since"><dt>Since</dt><dd>5.0.0</dd></dl>
+<p>This method allows you to specify origin within your <a class="el" href="interface_flurry.html">Flurry</a> SDK wrapper. As a general rule you should capture all the origin info related to your wrapper for <a class="el" href="interface_flurry.html">Flurry</a> SDK after every session start.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#a928b07baaee4262f675f4727ba0938b5" title="Adds a custom parameterized origin specified by originName with originVersion and parameters...">+ addOrigin:withVersion:withParameters:</a> for details on reporting origin info with parameters. <br/>
+</dd></dl>
+<div class="fragment"><div class="line">   - (void)interestingSDKWrapperLibraryfunction</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// ... after calling startSession</span></div>
+<div class="line">    [<a class="code" href="interface_flurry.html">Flurry</a> addOrigin:<span class="stringliteral">@&quot;Interesting_Wrapper&quot;</span> withVersion:<span class="stringliteral">@&quot;1.0.0&quot;</span>];</div>
+<div class="line">    <span class="comment">// more code ...</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">originName</td><td>Name of the origin. </td></tr>
+    <tr><td class="paramname">originVersion</td><td>Version string of the origin wrapper </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a928b07baaee4262f675f4727ba0938b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) addOrigin: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>originName</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withVersion:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>originVersion</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withParameters:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary *)&#160;</td>
+          <td class="paramname"><em>parameters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a custom parameterized origin specified by <code>originName</code> with <code>originVersion</code> and <code>parameters</code>. </p>
+<dl class="section since"><dt>Since</dt><dd>5.0.0</dd></dl>
+<p>This method overrides #addOrigin to allow you to associate parameters with an origin attribute. Parameters are valuable as they allow you to store characteristics of an origin.</p>
+<dl class="section note"><dt>Note</dt><dd>You should not pass private or confidential information about your origin info in a custom origin. <br/>
+ A maximum of 9 parameter names may be associated with any origin. Sending over 10 parameter names with a single origin will result in no parameters being logged for that origin.</dd></dl>
+<div class="fragment"><div class="line">   - (void)userPurchasedSomethingCool</div>
+<div class="line">{</div>
+<div class="line">NSDictionary *params =</div>
+<div class="line">   [NSDictionary dictionaryWithObjectsAndKeys:<span class="stringliteral">@&quot;Origin Info Item&quot;</span>, <span class="comment">// Parameter Value</span></div>
+<div class="line">       <span class="stringliteral">@&quot;Origin Info Item Key&quot;</span>, <span class="comment">// Parameter Name</span></div>
+<div class="line">       nil];</div>
+<div class="line">   <span class="comment">// ... after calling startSession</span></div>
+<div class="line">   [<a class="code" href="interface_flurry.html">Flurry</a> addOrigin:<span class="stringliteral">@&quot;Interesting_Wrapper&quot;</span> withVersion:<span class="stringliteral">@&quot;1.0.0&quot;</span>];</div>
+<div class="line">   <span class="comment">// more code ...</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">originName</td><td>Name of the origin. </td></tr>
+    <tr><td class="paramname">originVersion</td><td>Version string of the origin wrapper </td></tr>
+    <tr><td class="paramname">parameters</td><td>An immutable copy of map containing Name-Value pairs of parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab72c8c091057d2b60786a29d2767e99c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +370,7 @@ Class Methods</h2></td></tr>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">eventName</td><td>Name of the event. For maximum effectiveness, we recommend using a naming scheme that can be easily understood by non-technical people in your business domain. </td></tr>
-    <tr><td class="paramname">parameters</td><td>A map containing Name-Value pairs of parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>An immutable copy of map containing Name-Value pairs of parameters. </td></tr>
   </table>
   </dd>
 </dl>
@@ -290,12 +400,31 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a47f6ff842684dd2f18a723cfe3df85ba"></a>
+<a class="anchor" id="a8e75ee91fbed799971dfe2b11719802f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">+ (void) logAllPageViews: </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>see +(void)<a class="el" href="interface_flurry.html#ad8222c3e2257fb8aa22e9c93aa465ca6" title="Automatically track page views on a UINavigationController or UITabBarController.">logAllPageViewsForTarget:</a>target; for details </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="section since"><dt>Since</dt><dd>2.7 This method does the same as +(void)<a class="el" href="interface_flurry.html#ad8222c3e2257fb8aa22e9c93aa465ca6" title="Automatically track page views on a UINavigationController or UITabBarController.">logAllPageViewsForTarget:</a>target method and is left for backward compatibility </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad8222c3e2257fb8aa22e9c93aa465ca6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) logAllPageViewsForTarget: </td>
           <td></td>
           <td class="paramtype">(id)&#160;</td>
           <td class="paramname"><em>target</em></td>
@@ -305,13 +434,13 @@ Class Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Automatically track page views on a <code>UINavigationController</code> or <code>UITabBarController</code>. </p>
-<dl class="section since"><dt>Since</dt><dd>2.7</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.3</dd></dl>
 <p>This method increments the page view count for a session based on traversing a UINavigationController or UITabBarController. The page view count is only a counter for the number of transitions in your app. It does not associate a name with the page count. To associate a name with a count of occurences see <a class="el" href="interface_flurry.html#a5433aaf247d3e14120ba05877d034a61" title="Records a custom event specified by eventName.">logEvent:</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>Please make sure you assign the Tab and Navigation controllers to the view controllers before passing them to this method.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If you need to release passed target, you should call counterpart method + (void)<a class="el" href="interface_flurry.html#a732b380542c75c2f12d6ec90b9959aeb" title="Stops logging page views on previously observed with logAllPageViewsForTarget: UINavigationController...">stopLogPageViewsForTarget:</a>target before;</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry.html#a612da8f1557fa0e29d50640400d896ec" title="Explicitly track a page view during a session.">+ logPageView</a> for details on explictly incrementing page view count.</dd></dl>
 <div class="fragment"><div class="line">  -(void) trackViewsFromTabBar:(UITabBarController*) tabBar </div>
 <div class="line">{</div>
-<div class="line">[<a class="code" href="interface_flurry.html">Flurry</a> logAllPageViews:tabBar];</div>
+<div class="line">[<a class="code" href="interface_flurry.html">Flurry</a> logAllPageViewsForTarget:tabBar];</div>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -560,7 +689,7 @@ Class Methods</h2></td></tr>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">eventName</td><td>Name of the event. For maximum effectiveness, we recommend using a naming scheme that can be easily understood by non-technical people in your business domain. </td></tr>
-    <tr><td class="paramname">parameters</td><td>A map containing Name-Value pairs of parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>An immutable copy of map containing Name-Value pairs of parameters. </td></tr>
   </table>
   </dd>
 </dl>
@@ -626,7 +755,7 @@ Class Methods</h2></td></tr>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">eventName</td><td>Name of the event. For maximum effectiveness, we recommend using a naming scheme that can be easily understood by non-technical people in your business domain. </td></tr>
-    <tr><td class="paramname">parameters</td><td>A map containing Name-Value pairs of parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>An immutable copy of map containing Name-Value pairs of parameters. </td></tr>
     <tr><td class="paramname">timed</td><td>Specifies the event will be timed. </td></tr>
   </table>
   </dd>
@@ -964,26 +1093,6 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a94dc629b8d3a4aa7ba0e1c45fd931ce0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (void) setPushToken: </td>
-          <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>pushToken</em></td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set device push token. </p>
-<dl class="section since"><dt>Since</dt><dd>2.7</dd></dl>
-<p>After the device has successfully registered with APNS, call this method to set the push token received from APNS. </p>
-
-</div>
-</div>
 <a class="anchor" id="a085d6860e85344caa6c7ee201f2bc953"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1228,8 +1337,40 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a732b380542c75c2f12d6ec90b9959aeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) stopLogPageViewsForTarget: </td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>target</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops logging page views on previously observed with logAllPageViewsForTarget: <code>UINavigationController</code> or <code>UITabBarController</code>. </p>
+<dl class="section since"><dt>Since</dt><dd>4.3</dd></dl>
+<p>Call this method before instance of <code>UINavigationController</code> or <code>UITabBarController</code> observed with logAllPageViewsForTarget: is released.</p>
+<div class="fragment"><div class="line">  -(void) dealloc</div>
+<div class="line">{</div>
+<div class="line">[<a class="code" href="interface_flurry.html">Flurry</a> stopLogPageViewsForTarget:_tabBarController];</div>
+<div class="line">[_tabBarController release];</div>
+<div class="line">[super dealloc];</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The navigation or tab bar controller. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/Akshay/Downloads/Flurry-iOS-4.4.0/Flurry/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
+<li>/Users/Akshay/Downloads/Flurry.Release.5.0.0/Flurry/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
