@@ -84,6 +84,21 @@ typedef enum {
 - (BOOL)spaceShouldDisplay:(NSString*)adSpace  forType:(FlurryAdType)type __attribute__ ((deprecated));
 
 /*!
+ *  @brief Invoked when an ad is rendered.
+ *  @since 5.1.0
+ *
+ *  This method informs the user an ad was retrieved, and successful in displaying to the user.
+ *
+ *  @see FlurryAds#displayAdForSpace:view: for details on the method that will invoke this delegate. \n
+ *  FlurryAds#fetchAndDisplayAdForSpace:view:size: for details on the method that will invoke this delegate.
+ *
+ *  @param adSpace The placement of an ad in your app, where placement may
+ *  be splash screen for SPLASH_AD.
+ *  @param interstitial YES/NO if the space to display will be an interstitial.
+ */
+- (void) spaceDidRender:(NSString *)space interstitial:(BOOL)interstitial;
+
+/*!
  *  @brief Invoked when an ad fails to render.
  *  @since 4.0.0
  * 

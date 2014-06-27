@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>Flurry iOS 5.0.0: /Users/Akshay/Downloads/Flurry.Release.5.0.0/Flurry/Flurry.h Source File</title>
+<title>iOS SDK: /Users/vamsi/Documents/Releases/Flurry.Release.5.1.0/Flurry/Flurry.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,8 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Flurry iOS 5.0.0
+   <div id="projectname">iOS SDK
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -95,8 +97,8 @@ $(document).ready(function(){initNavTree('_flurry_8h_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  Flurry iOS Analytics Agent</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Copyright 2009-2012 Flurry, Inc. All rights reserved.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  </span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//  Methods in this header file are for use with Flurry Analytics</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Methods in this header file are for use with Flurry Analytics</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
@@ -154,12 +156,12 @@ $(document).ready(function(){initNavTree('_flurry_8h_source.html','');});
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;+ (void)logEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters timed:(BOOL)timed;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;+ (void)endTimedEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters;  <span class="comment">// non-nil parameters will update the parameters</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;+ (void)endTimedEvent:(NSString *)eventName withParameters:(NSDictionary *)parameters; <span class="comment">// non-nil parameters will update the parameters</span></div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;+ (void)logAllPageViews:(<span class="keywordtype">id</span>)target __attribute__ ((deprecated));        </div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;+ (void)logAllPageViews:(<span class="keywordtype">id</span>)target __attribute__ ((deprecated));  </div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;+ (void)logAllPageViewsForTarget:(<span class="keywordtype">id</span>)target;</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;+ (void)stopLogPageViewsForTarget:(<span class="keywordtype">id</span>)target;</div>
@@ -168,11 +170,11 @@ $(document).ready(function(){initNavTree('_flurry_8h_source.html','');});
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;+ (void)setUserID:(NSString *)userID;   </div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;+ (void)setUserID:(NSString *)userID; </div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;+ (void)setAge:(<span class="keywordtype">int</span>)age;</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;+ (void)setGender:(NSString *)gender;   <span class="comment">// user&#39;s gender m or f</span></div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;+ (void)setGender:(NSString *)gender; <span class="comment">// user&#39;s gender m or f</span></div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;+ (void)setLatitude:(<span class="keywordtype">double</span>)latitude longitude:(<span class="keywordtype">double</span>)longitude horizontalAccuracy:(<span class="keywordtype">float</span>)horizontalAccuracy verticalAccuracy:(<span class="keywordtype">float</span>)verticalAccuracy;</div>

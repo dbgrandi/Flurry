@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>Flurry iOS 5.0.0: &lt;FlurryAdDelegate&gt; Protocol Reference</title>
+<title>iOS SDK: &lt;FlurryAdDelegate&gt; Protocol Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,8 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Flurry iOS 5.0.0
+   <div id="projectname">iOS SDK
+   &#160;<span id="projectnumber">5.1.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -112,10 +114,12 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a697ef9711a40d6bc3a175f1f27dca051"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_delegate-p.html#a697ef9711a40d6bc3a175f1f27dca051">spaceShouldDisplay:interstitial:</a></td></tr>
 <tr class="memdesc:a697ef9711a40d6bc3a175f1f27dca051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when an ad is about to display on the specified <code>adSpace</code>.  <a href="#a697ef9711a40d6bc3a175f1f27dca051">More...</a><br/></td></tr>
 <tr class="separator:a697ef9711a40d6bc3a175f1f27dca051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8a35856ece8780b0f241ecedf1a4047"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8a35856ece8780b0f241ecedf1a4047"></a>
-(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_delegate-p.html#ae8a35856ece8780b0f241ecedf1a4047">spaceShouldDisplay:forType:</a></td></tr>
-<tr class="memdesc:ae8a35856ece8780b0f241ecedf1a4047"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Deprecated] This method is deprecated. -[spaceShouldDisplay:interstitial:] should be used. <br/></td></tr>
+<tr class="memitem:ae8a35856ece8780b0f241ecedf1a4047"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_delegate-p.html#ae8a35856ece8780b0f241ecedf1a4047">spaceShouldDisplay:forType:</a></td></tr>
+<tr class="memdesc:ae8a35856ece8780b0f241ecedf1a4047"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Deprecated] This method is deprecated. -[spaceShouldDisplay:interstitial:] should be used.  <a href="#ae8a35856ece8780b0f241ecedf1a4047">More...</a><br/></td></tr>
 <tr class="separator:ae8a35856ece8780b0f241ecedf1a4047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4556ec4b408f3ebb3a0fd5e558da66a8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_delegate-p.html#a4556ec4b408f3ebb3a0fd5e558da66a8">spaceDidRender:interstitial:</a></td></tr>
+<tr class="memdesc:a4556ec4b408f3ebb3a0fd5e558da66a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when an ad is rendered.  <a href="#a4556ec4b408f3ebb3a0fd5e558da66a8">More...</a><br/></td></tr>
+<tr class="separator:a4556ec4b408f3ebb3a0fd5e558da66a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3d0fd7e16ead501f8c8f93c74651a81"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_delegate-p.html#af3d0fd7e16ead501f8c8f93c74651a81">spaceDidFailToRender:error:</a></td></tr>
 <tr class="memdesc:af3d0fd7e16ead501f8c8f93c74651a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when an ad fails to render.  <a href="#af3d0fd7e16ead501f8c8f93c74651a81">More...</a><br/></td></tr>
 <tr class="separator:af3d0fd7e16ead501f8c8f93c74651a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,7 +213,7 @@ Instance Methods</h2></td></tr>
 
 <p>[Deprecated] Allow you to set your rootViewController. </p>
 <dl class="section since"><dt>Since</dt><dd>4.0.0 </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd></dd></dl>
 <p>This method has been deprecated. Please call FlurryAds::initialze: instead. </p>
 
 </div>
@@ -684,6 +688,79 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4556ec4b408f3ebb3a0fd5e558da66a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) spaceDidRender: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>space</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">interstitial:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>interstitial</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invoked when an ad is rendered. </p>
+<dl class="section since"><dt>Since</dt><dd>5.1.0</dd></dl>
+<p>This method informs the user an ad was retrieved, and successful in displaying to the user.</p>
+<dl class="section see"><dt>See Also</dt><dd>FlurryAds::displayAdForSpace:view: for details on the method that will invoke this delegate. <br/>
+ <a class="el" href="interface_flurry_ads.html#aabef9360d7bc25ff7b6d32d700451a4b" title="Fetch and Display an ad for the given space.">+ fetchAndDisplayAdForSpace:view:size: (FlurryAds)</a> for details on the method that will invoke this delegate.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adSpace</td><td>The placement of an ad in your app, where placement may be splash screen for SPLASH_AD. </td></tr>
+    <tr><td class="paramname">interstitial</td><td>YES/NO if the space to display will be an interstitial. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae8a35856ece8780b0f241ecedf1a4047"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) spaceShouldDisplay: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>adSpace</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[Deprecated] This method is deprecated. -[spaceShouldDisplay:interstitial:] should be used. </p>
+
+</div>
+</div>
 <a class="anchor" id="a697ef9711a40d6bc3a175f1f27dca051"></a>
 <div class="memitem">
 <div class="memproto">
@@ -913,7 +990,7 @@ Instance Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
-<li>/Users/Akshay/Downloads/Flurry.Release.5.0.0/FlurryAds/<a class="el" href="_flurry_ad_delegate_8h_source.html">FlurryAdDelegate.h</a></li>
+<li>/Users/vamsi/Documents/Releases/Flurry.Release.5.1.0/FlurryAds/<a class="el" href="_flurry_ad_delegate_8h_source.html">FlurryAdDelegate.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
