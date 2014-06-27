@@ -25,6 +25,7 @@ var searchData=
   ['spacedidfailtorender_3aerror_3a',['spaceDidFailToRender:error:',['../protocol_flurry_ad_delegate-p.html#af3d0fd7e16ead501f8c8f93c74651a81',1,'FlurryAdDelegate-p']]],
   ['spacedidreceivead_3a',['spaceDidReceiveAd:',['../protocol_flurry_ad_delegate-p.html#ab3aab75fc98595df6dfff08cb4762c76',1,'FlurryAdDelegate-p']]],
   ['spacedidreceiveclick_3a',['spaceDidReceiveClick:',['../protocol_flurry_ad_delegate-p.html#a0e587dc73e939ddeb1fafd599c5100a6',1,'FlurryAdDelegate-p']]],
+  ['spacedidrender_3ainterstitial_3a',['spaceDidRender:interstitial:',['../protocol_flurry_ad_delegate-p.html#a4556ec4b408f3ebb3a0fd5e558da66a8',1,'FlurryAdDelegate-p']]],
   ['spaceshoulddisplay_3afortype_3a',['spaceShouldDisplay:forType:',['../protocol_flurry_ad_delegate-p.html#ae8a35856ece8780b0f241ecedf1a4047',1,'FlurryAdDelegate-p']]],
   ['spaceshoulddisplay_3ainterstitial_3a',['spaceShouldDisplay:interstitial:',['../protocol_flurry_ad_delegate-p.html#a697ef9711a40d6bc3a175f1f27dca051',1,'FlurryAdDelegate-p']]],
   ['spacewillcollapse_3a',['spaceWillCollapse:',['../protocol_flurry_ad_delegate-p.html#a8f1c3c434dd276551d4fb1357be268b6',1,'FlurryAdDelegate-p']]],
