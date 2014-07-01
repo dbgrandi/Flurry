@@ -4,14 +4,14 @@ EOT
 
 Pod::Spec.new do |s|
   s.name     = 'FlurrySDK'
-  s.version  = '5.0.0'
+  s.version  = '5.1.0'
   s.license  = { :type => 'Commercial', :text => license }
   s.summary  = 'FlurrySDK for analytics tracking and reporting. Also Ads included'
   s.homepage = 'http://www.flurry.com'
   s.author   = { 'Flurry' => 'http://www.flurry.com' }
   s.source   = { :git => 'https://github.com/AntonPalich/Flurry.git', :tag => "#{s.version}" }
-  s.description = 'FlurrySDK for analytics tracking and reporting. Also Ads included'
   s.platform = :ios
+  s.requires_arc = false
   s.default_subspec = 'FlurrySDK'
 
   s.subspec 'FlurrySDK' do |ss|
