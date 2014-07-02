@@ -4,7 +4,7 @@ EOT
 
 Pod::Spec.new do |s|
   s.name     = 'FlurrySDK'
-  s.version  = '5.1.0'
+  s.version  = '5.1.2'
   s.license  = { :type => 'Commercial', :text => license }
   s.summary  = 'FlurrySDK for analytics tracking and reporting. Also Ads included'
   s.homepage = 'http://www.flurry.com'
