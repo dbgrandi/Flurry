@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>iOS SDK: /Users/vamsi/Documents/Releases/Flurry.Release.5.2.0/FlurryAds/FlurryAdDelegate.h Source File</title>
+<title>iOS SDK: /Users/vamsi/Downloads/Flurry.Release.5.3.0/FlurryAds/FlurryAdDelegate.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">5.2.0</span>
+   &#160;<span id="projectnumber">5.3.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -104,12 +104,12 @@ $(document).ready(function(){initNavTree('_flurry_ad_delegate_8h_source.html',''
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    WEB_BANNER = 1,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    WEB_TAKEOVER = 2,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    VIDEO_TAKEOVER = 3,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    AD_BANNER = 4,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    AD_TAKEOVER = 5,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    NETWORK_BANNER = 6,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    WEB_BANNER      = 1,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    WEB_TAKEOVER    = 2,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    VIDEO_TAKEOVER  = 3,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    AD_BANNER       = 4,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    AD_TAKEOVER     = 5,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    NETWORK_BANNER  = 6,</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    NETWORK_TAKEOVER = 7</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} FlurryAdType;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
@@ -158,36 +158,39 @@ $(document).ready(function(){initNavTree('_flurry_ad_delegate_8h_source.html',''
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a28f2083dcdad2cfdf6bc092f0b3920d3" title="The InMobi APID.">appSpotInMobiAppKey</a>;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a957280502a3ecce580a35e756937cdd1" title="The AdMob Publisher Id.">appSpotAdMobPublisherID</a>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#aa72eff6703fb3abf9054148feaebc291" title="The Mobclix Application Id.">appSpotMobclixApplicationID</a>; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a6ab7ef0ce17c2b1c9f99dd34d1a35545" title="The Jumptap Publisher Id.">appSpotJumptapPublisherID</a>;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a320875211530c69c2c4fc99f0f0b729f" title="The Jumptap Site Id.">appSpotJumptapSiteID</a>;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#aacd4b0c27a568e42f0115df3e333d7e6" title="Jumptap Banner Ad Spot ID.">appSpotJumptapBannerAdSpotID</a>;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a1c9789a9698d15ad69c9f4a6d007995b" title="Jumptap Leaderboard Ad Spot ID.">appSpotJumptapLeaderboardAdSpotID</a>;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a96b95c262bbaaa638465c26d89e14fbf" title="Jumptap Medium Rectange Ad Spot ID.">appSpotJumptapMediumRectangleAdSpotID</a>;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#ac62d5246190c439ce347dbd58361249e" title="The Greystripe Application Id.">appSpotGreystripeApplicationID</a>;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#aa5b80ed4df4122d245c19684954432e7" title="The FAcebook Audience network APID.">appSpotFANAppPlacementID</a>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a957280502a3ecce580a35e756937cdd1" title="The AdMob Publisher Id.">appSpotAdMobPublisherID</a>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#aa72eff6703fb3abf9054148feaebc291" title="The Mobclix Application Id.">appSpotMobclixApplicationID</a>; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a6ab7ef0ce17c2b1c9f99dd34d1a35545" title="The Jumptap Publisher Id.">appSpotJumptapPublisherID</a>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a320875211530c69c2c4fc99f0f0b729f" title="The Jumptap Site Id.">appSpotJumptapSiteID</a>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#aacd4b0c27a568e42f0115df3e333d7e6" title="Jumptap Banner Ad Spot ID.">appSpotJumptapBannerAdSpotID</a>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a1c9789a9698d15ad69c9f4a6d007995b" title="Jumptap Leaderboard Ad Spot ID.">appSpotJumptapLeaderboardAdSpotID</a>;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#a96b95c262bbaaa638465c26d89e14fbf" title="Jumptap Medium Rectange Ad Spot ID.">appSpotJumptapMediumRectangleAdSpotID</a>;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#pragma mark Information</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#pragma mark Callbacks</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;- (id)appSpotRootViewController <a class="code" href="protocol_flurry_ad_delegate-p.html#af9eda4962cc12f7e4aeb197e9eb943ea" title="[Deprecated] Allow you to set your rootViewController.">__attribute__</a> ((deprecated));</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#pragma mark Optional settings</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;- (BOOL)<a class="code" href="protocol_flurry_ad_delegate-p.html#ab1c2a4bc194dabf7ce973efa0e42beff" title="For networks that support accelerometer-enabled ads.">appSpotAccelerometerEnabled</a>;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;- (NSString *)<a class="code" href="protocol_flurry_ad_delegate-p.html#ac62d5246190c439ce347dbd58361249e" title="The Greystripe Application Id.">appSpotGreystripeApplicationID</a>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#pragma mark Information</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#pragma mark Callbacks</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;- (id)appSpotRootViewController <a class="code" href="protocol_flurry_ad_delegate-p.html#af9eda4962cc12f7e4aeb197e9eb943ea" title="[Deprecated] Allow you to set your rootViewController.">__attribute__</a> ((deprecated));</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#pragma mark Optional settings</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;- (BOOL)<a class="code" href="protocol_flurry_ad_delegate-p.html#ab1c2a4bc194dabf7ce973efa0e42beff" title="For networks that support accelerometer-enabled ads.">appSpotAccelerometerEnabled</a>;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.
