@@ -15,20 +15,17 @@ Pod::Spec.new do |s|
   s.default_subspec = 'FlurrySDK'
 
   s.subspec 'FlurrySDK' do |ss|
-    ss.source_files = 'Flurry/**/*.h'
-    ss.preserve_paths = 'Flurry/**/*.a'
-    ss.libraries = "z", "Flurry_#{s.version}"
+    ss.source_files = 'Flurry/*.h'
+    ss.libraries = "z"
     ss.frameworks = 'CoreGraphics', 'Foundation', 'MediaPlayer', 'SystemConfiguration', 'UIKit', 'Security'
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
-    ss.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/FlurrySDK/Flurry"' }
+    ss.vendored_libraries = 'Flurry/libFlurry_5.4.0.a'
   end
 
   s.subspec 'FlurryAds' do |ss|
-    ss.source_files = 'FlurryAds/**/*.h'
-    ss.preserve_paths = 'FlurryAds/**/*.a'
-    ss.library = "FlurryAds_#{s.version}"
+    ss.source_files = 'FlurryAds/*.h'
     ss.frameworks = 'iAd'
-    ss.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/FlurrySDK/FlurryAds"' }
+    ss.vendored_libraries = 'FlurryAds/libFlurryAds_5.4.0.a'
     ss.dependency 'FlurrySDK/FlurrySDK'
   end
 
