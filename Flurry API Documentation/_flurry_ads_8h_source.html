@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>iOS SDK: /Users/vamsi/Downloads/Flurry.Release.5.3.0/FlurryAds/FlurryAds.h Source File</title>
+<title>iOS SDK: /Users/vamsiprakhya/Documents/Releases/Flurry.Release.5.4.0/FlurryAds/FlurryAds.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">5.3.0</span>
+   &#160;<span id="projectnumber">5.4.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -118,36 +118,34 @@ $(document).ready(function(){initNavTree('_flurry_ads_8h_source.html','');});
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;+(BOOL) adReadyForSpace:(NSString*)space;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;+ (void)displayAdForSpace:(NSString*)space onView:(UIView *)view;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; + (void)displayAdForSpace:(NSString*)space modallyForViewController:(UIViewController *)viewController;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;+(BOOL) isAdAvailableForSpace:(NSString*)space view:(UIView *)view size:(FlurryAdSize)size timeout:(int64_t)timeout __attribute__ ((deprecated));</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;+ (BOOL)showAdForSpace:(NSString*)space view:(UIView *)viewContainer size:(FlurryAdSize)size timeout:(int64_t)timeout __attribute__ ((deprecated));</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;+ (void)fetchAndDisplayAdForSpace:(NSString*)space view:(UIView *)viewContainer size:(FlurryAdSize)size;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;+ (void) removeAdFromSpace:(NSString*)space;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;+ (void) initialize: (UIViewController *)rvc;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;+ (void)setAdDelegate:(<span class="keywordtype">id</span>)delegate;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;+ (void)enableTestAds:(BOOL)enable;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;+ (void) setUserCookies:(NSDictionary *) userCookies;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;+ (void)displayAdForSpace:(NSString*)space onView:(UIView *)view viewControllerForPresentation:(UIViewController*) viewControllerForPresentation;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; + (void)displayAdForSpace:(NSString*)space modallyForViewController:(UIViewController *)viewController  __attribute__ ((deprecated));</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;+ (void)fetchAndDisplayAdForSpace:(NSString*)space view:(UIView *)viewContainer viewController:(UIViewController*) viewControllerForPresentation size:(FlurryAdSize)size;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;+ (void) removeAdFromSpace:(NSString*)space;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;+ (void) initialize: (UIViewController *)rvc;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;+ (void)setAdDelegate:(<span class="keywordtype">id</span>)delegate;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;+ (void)enableTestAds:(BOOL)enable;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;+ (void) setUserCookies:(NSDictionary *) userCookies;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;+ (void) clearUserCookies;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;+ (void) setKeywordsForTargeting:(NSDictionary*) keywords;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;+ (void) clearUserCookies;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;+ (void) clearKeywords;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;+ (void) setKeywordsForTargeting:(NSDictionary*) keywords;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;+ (void) clearKeywords;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;+ (void) addCustomAdNetwork:(Class&lt;FlurryCustomAdNetwork&gt;)adNetworkClass withProperties:(<span class="keywordtype">id</span>&lt;FlurryCustomAdNetworkProperties&gt;)adNetworkProperties;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;+ (void) addCustomAdNetwork:(Class&lt;FlurryCustomAdNetwork&gt;)adNetworkClass withProperties:(<span class="keywordtype">id</span>&lt;FlurryCustomAdNetworkProperties&gt;)adNetworkProperties;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

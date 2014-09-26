@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['displayadforspace_3amodallyforviewcontroller_3a',['displayAdForSpace:modallyForViewController:',['../interface_flurry_ads.html#a6926081a057d41fe81c2476a0dcc1062',1,'FlurryAds']]],
-  ['displayadforspace_3aonview_3a',['displayAdForSpace:onView:',['../interface_flurry_ads.html#a548bad4390b575c117754c915cc4077a',1,'FlurryAds']]]
+  ['displayadforspace_3amodallyforviewcontroller_3a',['displayAdForSpace:modallyForViewController:',['../interface_flurry_ads.html#ae61be44f5308297f7021fef7aa702934',1,'FlurryAds']]],
+  ['displayadforspace_3aonview_3aviewcontrollerforpresentation_3a',['displayAdForSpace:onView:viewControllerForPresentation:',['../interface_flurry_ads.html#a73e14f2cd53fd9e84c2a0a02c9e465ff',1,'FlurryAds']]]
 ];
