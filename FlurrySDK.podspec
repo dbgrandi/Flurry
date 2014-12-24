@@ -16,26 +16,28 @@ Pod::Spec.new do |s|
 
   s.subspec 'FlurrySDK' do |ss|
     ss.source_files = 'Flurry/*.h'
-    ss.libraries = "z"
     # To ensure frameworks really used by lib you can use:
-    # SystemConfiguration: nm -m Flurry/libFlurry_5.3.0.a | grep -v 'non-external' | grep _SC
-    # UIKit used:          nm -m Flurry/libFlurry_5.3.0.a | grep -v 'non-external' | grep _UI
-    # Security used:       nm -m Flurry/libFlurry_5.3.0.a | grep -v 'non-external' | grep _Sec
+    # SystemConfiguration: nm -m Flurry/*.a | grep -v 'non-external' | grep _SC
+    # UIKit used:          nm -m Flurry/*.a | grep -v 'non-external' | grep _UI
+    # Security used:       nm -m Flurry/*.a | grep -v 'non-external' | grep _Sec
     ss.frameworks = 'CoreGraphics', 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
     ss.vendored_libraries = "Flurry/libFlurry_#{s.version}.a"
   end
 
   s.subspec 'FlurryAds' do |ss|
     ss.source_files = 'FlurryAds/*.h'
+    # To ensure lib really used by lib you can use:
+    # libz.dylib:  nm -m FlurryAds/*.a | grep -v 'non-external' | grep _inflate
+    ss.libraries = "z"
     # To ensure frameworks really used by lib you can use:
-    # iAd used:    nm -m FlurryAds/libFlurryAds_5.3.0.a | grep -v 'non-external' | grep _Ad
-    # MediaPlayer: nm -m FlurryAds/libFlurryAds_5.3.0.a | grep -v 'non-external' | grep _MP
+    # iAd used:    nm -m FlurryAds/*.a | grep -v 'non-external' | grep _Ad
+    # MediaPlayer: nm -m FlurryAds/*.a | grep -v 'non-external' | grep _MP
     ss.frameworks = 'iAd', 'MediaPlayer'
     # next frameworks is optional according:
     # http://support.flurry.com/index.php?title=Guides/s/Mediation/Code/Banners
     # To ensure frameworks really used by lib you can use:
-    # AdSupport used:     nm -m FlurryAds/libFlurryAds_5.3.0.a | grep -v 'non-external' | grep _AS
-    # StoreKit not used?: nm -m FlurryAds/libFlurryAds_5.3.0.a | grep -v 'non-external' | grep _SK
+    # AdSupport used:     nm -m FlurryAds/*.a | grep -v 'non-external' | grep _AS
+    # StoreKit not used?: nm -m FlurryAds/*.a | grep -v 'non-external' | grep _SK
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
     ss.vendored_libraries = "FlurryAds/libFlurryAds_#{s.version}.a"
     ss.dependency 'FlurrySDK/FlurrySDK'
