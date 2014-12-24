@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     # UIKit used:          nm -m Flurry/libFlurry_5.3.0.a | grep -v 'non-external' | grep _UI
     # Security used:       nm -m Flurry/libFlurry_5.3.0.a | grep -v 'non-external' | grep _Sec
     ss.frameworks = 'CoreGraphics', 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = 'Flurry/libFlurry_5.4.0.a'
+    ss.vendored_libraries = "Flurry/libFlurry_#{s.version}.a"
   end
 
   s.subspec 'FlurryAds' do |ss|
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
     # AdSupport used:     nm -m FlurryAds/libFlurryAds_5.3.0.a | grep -v 'non-external' | grep _AS
     # StoreKit not used?: nm -m FlurryAds/libFlurryAds_5.3.0.a | grep -v 'non-external' | grep _SK
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
-    ss.vendored_libraries = 'FlurryAds/libFlurryAds_5.4.0.a'
+    ss.vendored_libraries = "FlurryAds/libFlurryAds_#{s.version}.a"
     ss.dependency 'FlurrySDK/FlurrySDK'
   end
 
