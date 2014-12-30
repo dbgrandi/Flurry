@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">5.4.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('protocol_flurry_ad_delegate-p.html',''
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -144,9 +144,15 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a0e587dc73e939ddeb1fafd599c5100a6"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_delegate-p.html#a0e587dc73e939ddeb1fafd599c5100a6">spaceDidReceiveClick:</a></td></tr>
 <tr class="memdesc:a0e587dc73e939ddeb1fafd599c5100a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informational callback invoked when an ad is clicked for the specified <code>adSpace</code>.  <a href="#a0e587dc73e939ddeb1fafd599c5100a6">More...</a><br/></td></tr>
 <tr class="separator:a0e587dc73e939ddeb1fafd599c5100a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48c7bbba044873d95f894f84d2a128a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_delegate-p.html#ab48c7bbba044873d95f894f84d2a128a">spaceClickActionDidFail:error:</a></td></tr>
+<tr class="memdesc:ab48c7bbba044873d95f894f84d2a128a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informational callback invoked when an ad is clicked for the specified <code>adSpace</code>. and the click action fails.  <a href="#ab48c7bbba044873d95f894f84d2a128a">More...</a><br/></td></tr>
+<tr class="separator:ab48c7bbba044873d95f894f84d2a128a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7aacea36c78671b9feacd0dd0681206"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_delegate-p.html#ab7aacea36c78671b9feacd0dd0681206">videoDidFinish:</a></td></tr>
 <tr class="memdesc:ab7aacea36c78671b9feacd0dd0681206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when a video finishes playing.  <a href="#ab7aacea36c78671b9feacd0dd0681206">More...</a><br/></td></tr>
 <tr class="separator:ab7aacea36c78671b9feacd0dd0681206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221193d2ed566d603b1fec34161afeca"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_flurry_ad_delegate-p.html#a221193d2ed566d603b1fec34161afeca">videoDidNotFinish:</a></td></tr>
+<tr class="memdesc:a221193d2ed566d603b1fec34161afeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when a video finishes playing.  <a href="#a221193d2ed566d603b1fec34161afeca">More...</a><br/></td></tr>
+<tr class="separator:a221193d2ed566d603b1fec34161afeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Third party network Calls</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Optional calls to pass information needed to display ads through 3rd parties. </p>
 </div></td></tr>
@@ -466,6 +472,49 @@ Instance Methods</h2></td></tr>
 <p>The Mobclix Application Id. </p>
 <dl class="section since"><dt>Since</dt><dd>4.0.0</dd></dl>
 <p>This is the id for your app as set in Mobclix </p>
+
+</div>
+</div>
+<a class="anchor" id="ab48c7bbba044873d95f894f84d2a128a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) spaceClickActionDidFail: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>adSpace</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Informational callback invoked when an ad is clicked for the specified <code>adSpace</code>. and the click action fails. </p>
+<dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adSpace</td><td>The placement of an ad in your app, where placement may be splash screen for SPLASH_AD. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1011,8 +1060,42 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a221193d2ed566d603b1fec34161afeca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) videoDidNotFinish: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>adSpace</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invoked when a video finishes playing. </p>
+<dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
+<p>This method informs the app that a video associated with an ad has NOT finished playing</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adSpace</td><td>The placement of an ad in your app, where placement may be splash screen for SPLASH_AD. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
-<li>/Users/vamsiprakhya/Documents/Releases/Flurry.Release.5.4.0/FlurryAds/<a class="el" href="_flurry_ad_delegate_8h_source.html">FlurryAdDelegate.h</a></li>
+<li><a class="el" href="_flurry_ad_delegate_8h_source.html">FlurryAdDelegate.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
