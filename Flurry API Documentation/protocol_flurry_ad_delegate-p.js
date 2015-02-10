@@ -14,6 +14,7 @@ var protocol_flurry_ad_delegate_p =
     [ "appSpotMillennialAppKey", "protocol_flurry_ad_delegate-p.html#a8c8a073785f5352c5de473a8ac8f0f81", null ],
     [ "appSpotMillennialInterstitalAppKey", "protocol_flurry_ad_delegate-p.html#acded2c10dd666b403851e9d5aa732e13", null ],
     [ "appSpotMobclixApplicationID", "protocol_flurry_ad_delegate-p.html#aa72eff6703fb3abf9054148feaebc291", null ],
+    [ "spaceClickActionDidFail:error:", "protocol_flurry_ad_delegate-p.html#ab48c7bbba044873d95f894f84d2a128a", null ],
     [ "spaceDidCollapse:", "protocol_flurry_ad_delegate-p.html#aff43a6fbd2a1d34170d25721c013bf9f", null ],
     [ "spaceDidDismiss:interstitial:", "protocol_flurry_ad_delegate-p.html#aac831836685267b41b9bbc00ca392842", null ],
     [ "spaceDidFailToReceiveAd:error:", "protocol_flurry_ad_delegate-p.html#a5106469035dab1103e0f8e7815d8d23e", null ],
@@ -27,5 +28,6 @@ var protocol_flurry_ad_delegate_p =
     [ "spaceWillDismiss:interstitial:", "protocol_flurry_ad_delegate-p.html#ae110ac801011a97400b31643fede7007", null ],
     [ "spaceWillExpand:", "protocol_flurry_ad_delegate-p.html#ab10225490cbe9a79bbb716291100e85d", null ],
     [ "spaceWillLeaveApplication:", "protocol_flurry_ad_delegate-p.html#aff0b7c92964bdb8568985c61cad696b3", null ],
-    [ "videoDidFinish:", "protocol_flurry_ad_delegate-p.html#ab7aacea36c78671b9feacd0dd0681206", null ]
+    [ "videoDidFinish:", "protocol_flurry_ad_delegate-p.html#ab7aacea36c78671b9feacd0dd0681206", null ],
+    [ "videoDidNotFinish:", "protocol_flurry_ad_delegate-p.html#a221193d2ed566d603b1fec34161afeca", null ]
 ];

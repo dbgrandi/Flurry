@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">5.4.0</span>
+   &#160;<span id="projectnumber">6.0.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('interface_flurry_ads.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('interface_flurry_ads.html','');});
 
 <p><code>#import &lt;<a class="el" href="_flurry_ads_8h_source.html">FlurryAds.h</a>&gt;</code></p>
 
-<p>Inherits NSObject.</p>
+<p>Inherits &lt;NSObject&gt;.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -338,7 +338,7 @@ Class Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Display an ad for the given <code>space</code>. </p>
-<dl class="section since"><dt>Since</dt><dd>4.1.0</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.1.0  5.4.0</dd></dl>
 <p>This method will display an ad if one is ready for display on the device.</p>
 <dl class="section note"><dt>Note</dt><dd>The <code>space</code> simply represents the placement of the ad in your app and should be unique for each placement. Only one ad will show at a time for any given ad space. For example, if you are displaying a full screen ad on your splash screen and after level completeion, you may have the following spaces <code>"SPLASH_AD" and @c @"LEVEL_AD"</code>.</dd></dl>
 <dl class="section see"><dt>See Also</dt><dd>#fetchAdForSpace:view:size: for details on retrieving an ad.<br/>
@@ -499,7 +499,7 @@ Class Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fetch and Display an ad for the given <code>space</code>. </p>
-<dl class="section since"><dt>Since</dt><dd>4.0.0</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>4.0.0  5.4.0</dd></dl>
 <p>This method will display an ad if one is available from the <a class="el" href="interface_flurry.html">Flurry</a> server for this user.</p>
 <dl class="section note"><dt>Note</dt><dd>If this method returns YES, an ad is available for the space within <code>timeout</code>. <br/>
  This is a blocking method that allows you to change the user experience based on availability of an ad. If you would like to display an ad asynchronously, just set timeout to 0. This is useful in the case of banners for instance where the user should not wait for its display. If you are loading async with timeout set to 0, ignore the return value of this method and rely exclusively on the relevant delegate methods listed below<br/>
@@ -662,11 +662,11 @@ Class Methods</h2></td></tr>
 <div class="line">       [<a class="code" href="interface_flurry.html">Flurry</a> startSession:<span class="stringliteral">@&quot;YOUR_API_KEY&quot;</span>];</div>
 <div class="line"></div>
 <div class="line">       <span class="comment">// Specify that user loves vacations</span></div>
-<div class="line">       NSDictionary *keywords =</div>
+<div class="line">       NSDictionary *<a class="code" href="interface_flurry_ad_targeting.html#a27cce26d3aaa140baf1f8379dd62145c" title="Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when an ad is reque...">keywords</a> =</div>
 <div class="line">           [NSDictionary dictionaryWithObjectsAndKeys:<span class="stringliteral">@&quot;vacation&quot;</span>, <span class="comment">// Parameter Value</span></div>
 <div class="line">           <span class="stringliteral">@&quot;UserPreference&quot;</span>, <span class="comment">// Parameter Name</span></div>
 <div class="line">           nil];</div>
-<div class="line">           [<a class="code" href="interface_flurry_ads.html" title="Provides all available methods for displaying ads.">FlurryAds</a> setKeywords:keywords];</div>
+<div class="line">           [<a class="code" href="interface_flurry_ads.html" title="Provides all available methods for displaying ads.">FlurryAds</a> setKeywords:<a class="code" href="interface_flurry_ad_targeting.html#a27cce26d3aaa140baf1f8379dd62145c" title="Sets a dictionary of key/value pairs, which will be transmitted to Flurry servers when an ad is reque...">keywords</a>];</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// ....</span></div>
 <div class="line">}</div>
@@ -721,7 +721,7 @@ Class Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/vamsiprakhya/Documents/Releases/Flurry.Release.5.4.0/FlurryAds/<a class="el" href="_flurry_ads_8h_source.html">FlurryAds.h</a></li>
+<li><a class="el" href="_flurry_ads_8h_source.html">FlurryAds.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
