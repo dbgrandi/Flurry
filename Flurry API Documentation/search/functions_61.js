@@ -22,6 +22,13 @@ var searchData=
   ['adinterstitialwilldismiss_3a',['adInterstitialWillDismiss:',['../protocol_flurry_ad_interstitial_delegate-p.html#aeee375d209dba215b575f4390c583869',1,'FlurryAdInterstitialDelegate-p']]],
   ['adinterstitialwillleaveapplication_3a',['adInterstitialWillLeaveApplication:',['../protocol_flurry_ad_interstitial_delegate-p.html#a1dcf83e2e6aa2e3589dd617a6ad49a39',1,'FlurryAdInterstitialDelegate-p']]],
   ['adinterstitialwillpresent_3a',['adInterstitialWillPresent:',['../protocol_flurry_ad_interstitial_delegate-p.html#a3446e0d7dcafb939fba5080c5e700533',1,'FlurryAdInterstitialDelegate-p']]],
+  ['adnative_3aaderror_3aerrordescription_3a',['adNative:adError:errorDescription:',['../protocol_flurry_ad_native_delegate-p.html#a8815fca110a389d44754ae3b995f2c97',1,'FlurryAdNativeDelegate-p']]],
+  ['adnativediddismiss_3a',['adNativeDidDismiss:',['../protocol_flurry_ad_native_delegate-p.html#aef9b695e48670156d1c9ca9030e0fa8b',1,'FlurryAdNativeDelegate-p']]],
+  ['adnativedidfetchad_3a',['adNativeDidFetchAd:',['../protocol_flurry_ad_native_delegate-p.html#a145a00a1cfd5526c157bdbcf7af7a4a8',1,'FlurryAdNativeDelegate-p']]],
+  ['adnativedidreceiveclick_3a',['adNativeDidReceiveClick:',['../protocol_flurry_ad_native_delegate-p.html#a74707f0902106972554b42a36495733b',1,'FlurryAdNativeDelegate-p']]],
+  ['adnativewilldismiss_3a',['adNativeWillDismiss:',['../protocol_flurry_ad_native_delegate-p.html#a2f5f3d7b688c95240f51140c848404d3',1,'FlurryAdNativeDelegate-p']]],
+  ['adnativewillleaveapplication_3a',['adNativeWillLeaveApplication:',['../protocol_flurry_ad_native_delegate-p.html#a257a0d54437bfffdb184e7a1464ad7cd',1,'FlurryAdNativeDelegate-p']]],
+  ['adnativewillpresent_3a',['adNativeWillPresent:',['../protocol_flurry_ad_native_delegate-p.html#a65b451548e89f3bd16e48ce8dfcb9363',1,'FlurryAdNativeDelegate-p']]],
   ['adreadyforspace_3a',['adReadyForSpace:',['../interface_flurry_ads.html#a1f87cd568f71e77a9c89264b165d2164',1,'FlurryAds']]],
   ['appspotaccelerometerenabled',['appSpotAccelerometerEnabled',['../protocol_flurry_ad_delegate-p.html#ab1c2a4bc194dabf7ce973efa0e42beff',1,'FlurryAdDelegate-p']]],
   ['appspotadmobpublisherid',['appSpotAdMobPublisherID',['../protocol_flurry_ad_delegate-p.html#a957280502a3ecce580a35e756937cdd1',1,'FlurryAdDelegate-p']]],
@@ -35,5 +42,6 @@ var searchData=
   ['appspotjumptapsiteid',['appSpotJumptapSiteID',['../protocol_flurry_ad_delegate-p.html#a320875211530c69c2c4fc99f0f0b729f',1,'FlurryAdDelegate-p']]],
   ['appspotmillennialappkey',['appSpotMillennialAppKey',['../protocol_flurry_ad_delegate-p.html#a8c8a073785f5352c5de473a8ac8f0f81',1,'FlurryAdDelegate-p']]],
   ['appspotmillennialinterstitalappkey',['appSpotMillennialInterstitalAppKey',['../protocol_flurry_ad_delegate-p.html#acded2c10dd666b403851e9d5aa732e13',1,'FlurryAdDelegate-p']]],
-  ['appspotmobclixapplicationid',['appSpotMobclixApplicationID',['../protocol_flurry_ad_delegate-p.html#aa72eff6703fb3abf9054148feaebc291',1,'FlurryAdDelegate-p']]]
+  ['appspotmobclixapplicationid',['appSpotMobclixApplicationID',['../protocol_flurry_ad_delegate-p.html#aa72eff6703fb3abf9054148feaebc291',1,'FlurryAdDelegate-p']]],
+  ['assetlistfortype_3a',['assetListForType:',['../interface_flurry_ad_native.html#a59bfc8aab67569dee1fc9965ddab3033',1,'FlurryAdNative']]]
 ];

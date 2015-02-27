@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -112,9 +112,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a4f08d77957ce984819fb05ae27edc212"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_interstitial.html#a4f08d77957ce984819fb05ae27edc212">fetchAd</a></td></tr>
 <tr class="memdesc:a4f08d77957ce984819fb05ae27edc212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an ad for this object using the adspace specified in the initializer routine.  <a href="#a4f08d77957ce984819fb05ae27edc212">More...</a><br/></td></tr>
 <tr class="separator:a4f08d77957ce984819fb05ae27edc212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a441dfd4cc6a6d56cc6837b99042d8e49"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_interstitial.html#a441dfd4cc6a6d56cc6837b99042d8e49">presentWithViewControler:</a></td></tr>
-<tr class="memdesc:a441dfd4cc6a6d56cc6837b99042d8e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the ad associated with this ad object.  <a href="#a441dfd4cc6a6d56cc6837b99042d8e49">More...</a><br/></td></tr>
-<tr class="separator:a441dfd4cc6a6d56cc6837b99042d8e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3548d0b0dfcc60640656db34181c0916"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_flurry_ad_interstitial.html#a3548d0b0dfcc60640656db34181c0916">presentWithViewController:</a></td></tr>
+<tr class="memdesc:a3548d0b0dfcc60640656db34181c0916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the ad associated with this ad object.  <a href="#a3548d0b0dfcc60640656db34181c0916">More...</a><br/></td></tr>
+<tr class="separator:a3548d0b0dfcc60640656db34181c0916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -157,7 +157,7 @@ Properties</h2></td></tr>
 <dl class="section see"><dt>See Also</dt><dd><br/>
  <a class="el" href="protocol_flurry_ad_interstitial_delegate-p.html#a06dffa200d20497eea9b3b8c58ff5093" title="Invoked when an ad is received for the specified interstitialAd object.">- adInterstitialDidFetchAd: (FlurryAdInterstitialDelegate-p)</a> for details on the notification of ads being received.<br/>
  <a class="el" href="protocol_flurry_ad_interstitial_delegate-p.html#aa487cb1fe1326d04189d8c729ef7fa69" title="Informational callback invoked when there is an ad error.">- adInterstitial:adError:errorDescription: (FlurryAdInterstitialDelegate-p)</a> for details on notification of failure to receive ads from this request.<br/>
- <a class="el" href="interface_flurry_ad_interstitial.html#a441dfd4cc6a6d56cc6837b99042d8e49" title="Display the ad associated with this ad object.">- presentWithViewControler:</a> for details on displaying an available ad.</dd></dl>
+ <a class="el" href="interface_flurry_ad_interstitial.html#a3548d0b0dfcc60640656db34181c0916" title="Display the ad associated with this ad object.">- presentWithViewController:</a> for details on displaying an available ad.</dd></dl>
 <div class="fragment"><div class="line"><span class="keyword">@property</span> (strong) <a class="code" href="interface_flurry_ad_interstitial.html" title="Provides all available methods for displaying interstitial ads.">FlurryAdInterstitial</a>* adInterstitial;</div>
 <div class="line"></div>
 <div class="line">- (void)<a class="code" href="interface_flurry_ad_interstitial.html#a4f08d77957ce984819fb05ae27edc212" title="Retrieves an ad for this object using the adspace specified in the initializer routine.">fetchAd</a></div>
@@ -170,13 +170,13 @@ Properties</h2></td></tr>
 <div class="line"><span class="comment">// Show whenever delegate is invoked</span></div>
 <div class="line">- (void) adInterstitialDidFetchAd:(<a class="code" href="interface_flurry_ad_interstitial.html" title="Provides all available methods for displaying interstitial ads.">FlurryAdInterstitial</a> *) adInterstitial {</div>
 <div class="line">    <span class="comment">// Received Ad</span></div>
-<div class="line">    [adInterstitial presentWithViewControler:<span class="keyword">self</span>];</div>
+<div class="line">    [adInterstitial presentWithViewController:<span class="keyword">self</span>];</div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="comment">// Alternatively, try to display at a certain point in the app</span></div>
 <div class="line">- (void) levelComplete {</div>
 <div class="line">    <span class="keywordflow">if</span>([<span class="keyword">self</span>.adInterstitial <a class="code" href="interface_flurry_ad_interstitial.html#a8a2d31b8390aa670ea70df637d580433" title="Returns if an ad is currently ready to display for this ad object.">ready</a>]) {</div>
-<div class="line">        [<span class="keyword">self</span>.adInterstitial presentWithViewControler:<span class="keyword">self</span>];</div>
+<div class="line">        [<span class="keyword">self</span>.adInterstitial presentWithViewController:<span class="keyword">self</span>];</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> 
@@ -209,12 +209,12 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a441dfd4cc6a6d56cc6837b99042d8e49"></a>
+<a class="anchor" id="a3548d0b0dfcc60640656db34181c0916"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) presentWithViewControler: </td>
+          <td class="memname">- (void) presentWithViewController: </td>
           <td></td>
           <td class="paramtype">(UIViewController *)&#160;</td>
           <td class="paramname"><em>presentingViewController</em></td>
@@ -232,7 +232,7 @@ Properties</h2></td></tr>
 <div class="fragment"><div class="line">- (void)showFullscreenAd</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">if</span>([<span class="keyword">self</span>.adInterstitial <a class="code" href="interface_flurry_ad_interstitial.html#a8a2d31b8390aa670ea70df637d580433" title="Returns if an ad is currently ready to display for this ad object.">ready</a>]) {</div>
-<div class="line">        [<span class="keyword">self</span>.adInterstitial presentWithViewControler:<span class="keyword">self</span>];</div>
+<div class="line">        [<span class="keyword">self</span>.adInterstitial presentWithViewController:<span class="keyword">self</span>];</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
@@ -266,7 +266,7 @@ Properties</h2></td></tr>
 <p>Sets the object to receive various delegate methods. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <p>This method allows you to register an object that will receive notifications at different phases of interstitial ad serving.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="protocol_flurry_ad_interstitial_delegate-p.html" title="Provides all available delegates for receiving callbacks related to interstitial Ad Serving...">FlurryAdInterstitialDelegate</a> for details on delegates available.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="protocol_flurry_ad_interstitial_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Ad Serving.">FlurryAdInterstitialDelegate</a> for details on delegates available.</dd></dl>
 <div class="fragment"><div class="line">-(void) fetchInterstitialAd;</div>
 <div class="line">{</div>
 <div class="line">    FlurryAdInterstitial* interstitialAd = [[FlurryAdInterstitial alloc] initWithSpace:adSpace];</div>
@@ -314,7 +314,7 @@ Properties</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">if</span> ([<span class="keyword">self</span>.adInterstitial <a class="code" href="interface_flurry_ad_interstitial.html#a8a2d31b8390aa670ea70df637d580433" title="Returns if an ad is currently ready to display for this ad object.">ready</a>] == YES)</div>
 <div class="line">    {</div>
-<div class="line">        [<span class="keyword">self</span>.adInterstitial presentWithViewControler:<span class="keyword">self</span>];</div>
+<div class="line">        [<span class="keyword">self</span>.adInterstitial presentWithViewController:<span class="keyword">self</span>];</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">    {</div>

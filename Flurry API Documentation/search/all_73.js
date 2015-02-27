@@ -17,7 +17,7 @@ var searchData=
   ['setshowerrorinlogenabled_3a',['setShowErrorInLogEnabled:',['../interface_flurry.html#a642b4d19fc67250c24dafe66bb40ea71',1,'Flurry']]],
   ['setusercookies_3a',['setUserCookies:',['../interface_flurry_ads.html#ab24e531118ba482ff41fcf695a21de39',1,'FlurryAds']]],
   ['setuserid_3a',['setUserID:',['../interface_flurry.html#a7f1e93aa12021d864af31e327ea368e0',1,'Flurry']]],
-  ['space',['space',['../interface_flurry_ad_banner.html#afd94236416f04f5ef36c8f800fd2b891',1,'FlurryAdBanner::space()'],['../interface_flurry_ad_interstitial.html#ab768a4afa7539050984dbb68b3ed6da0',1,'FlurryAdInterstitial::space()']]],
+  ['space',['space',['../interface_flurry_ad_banner.html#afd94236416f04f5ef36c8f800fd2b891',1,'FlurryAdBanner::space()'],['../interface_flurry_ad_interstitial.html#ab768a4afa7539050984dbb68b3ed6da0',1,'FlurryAdInterstitial::space()'],['../interface_flurry_ad_native.html#a89286ea9a48e2576afde64bf41436e12',1,'FlurryAdNative::space()']]],
   ['spaceclickactiondidfail_3aerror_3a',['spaceClickActionDidFail:error:',['../protocol_flurry_ad_delegate-p.html#ab48c7bbba044873d95f894f84d2a128a',1,'FlurryAdDelegate-p']]],
   ['spacedidcollapse_3a',['spaceDidCollapse:',['../protocol_flurry_ad_delegate-p.html#aff43a6fbd2a1d34170d25721c013bf9f',1,'FlurryAdDelegate-p']]],
   ['spacediddismiss_3ainterstitial_3a',['spaceDidDismiss:interstitial:',['../protocol_flurry_ad_delegate-p.html#aac831836685267b41b9bbc00ca392842',1,'FlurryAdDelegate-p']]],
