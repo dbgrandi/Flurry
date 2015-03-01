@@ -28,6 +28,7 @@
  */
 @protocol FlurryAdBannerDelegate <NSObject>
 
+@optional
 
 /*!
  *  @brief Invoked when an ad is received for the specified @c bannerAd object.

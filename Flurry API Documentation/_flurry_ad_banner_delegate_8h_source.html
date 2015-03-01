@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">6.0.0</span>
+   &#160;<span id="projectnumber">6.2.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -109,26 +109,27 @@ $(document).ready(function(){initNavTree('_flurry_ad_banner_delegate_8h_source.h
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="protocol_flurry_ad_banner_delegate-p.html">   29</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_flurry_ad_banner_delegate-p.html" title="Provides all available delegates for receiving callbacks related to Banner Ad Serving.">FlurryAdBannerDelegate</a> &lt;NSObject&gt;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;- (void) adBannerDidFetchAd:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;- (void) adBannerDidRender:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;- (void) adBannerWillPresentFullscreen:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;- (void) adBannerWillLeaveApplication:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (void) adBannerWillDismissFullscreen:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;- (void) adBannerDidDismissFullscreen:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;- (void) adBannerDidReceiveClick:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;- (void) adBannerVideoDidFinish:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;- (void) adBanner:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*) bannerAd adError:(FlurryAdError) adError errorDescription:(NSError*) errorDescription;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;- (void) adBannerDidFetchAd:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;- (void) adBannerDidRender:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;- (void) adBannerWillPresentFullscreen:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;- (void) adBannerWillLeaveApplication:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (void) adBannerWillDismissFullscreen:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- (void) adBannerDidDismissFullscreen:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- (void) adBannerDidReceiveClick:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;- (void) adBannerVideoDidFinish:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*)bannerAd;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;- (void) adBanner:(<a class="code" href="interface_flurry_ad_banner.html" title="Provides all available methods for displaying banner ads.">FlurryAdBanner</a>*) bannerAd adError:(FlurryAdError) adError errorDescription:(NSError*) errorDescription;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

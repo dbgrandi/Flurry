@@ -13,7 +13,7 @@
 @class FlurryAdInterstitial;
 
 /*!
- *  @brief Provides all available delegates for receiving callbacks related to interstitial Ad Serving.
+ *  @brief Provides all available delegates for receiving callbacks related to Ad Serving.
  *
  *  Set of methods that allow developers to manage and take actions within
  *  different phases of App ad display.
@@ -48,7 +48,7 @@
  *  This method informs the user an ad was retrieved, and successful in displaying to the user.
  *
  *  @see \n
- *  FlurryAdInterstitial#presentWithViewControler: for details on the method that will invoke this delegate. \n
+ *  FlurryAdInterstitial#presentWithViewController: for details on the method that will invoke this delegate. \n
  *
  *  @param interstitialAd The ad object that rendered successfully.
  *
