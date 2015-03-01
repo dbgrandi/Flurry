@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.summary  = 'FlurrySDK for analytics tracking and reporting. Also Ads included'
   s.homepage = 'http://www.flurry.com'
   s.author   = { 'Flurry' => 'http://www.flurry.com' }
-  s.source   = { :git => 'https://github.com/AntonPalich/Flurry.git', :tag => "#{s.version}" }
+  s.source   = { :git => 'https://github.com/gudatcomputers/Flurry', :tag => "#{s.version}" }
   s.platform = :ios
   s.requires_arc = false
   s.default_subspec = 'FlurrySDK'
