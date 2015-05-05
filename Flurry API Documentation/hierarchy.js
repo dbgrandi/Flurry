@@ -12,6 +12,7 @@ var hierarchy =
       [ "<FlurryAdNativeDelegate>", "protocol_flurry_ad_native_delegate-p.html", null ],
       [ "FlurryAdNativeStyle", "interface_flurry_ad_native_style.html", null ],
       [ "FlurryAds", "interface_flurry_ads.html", null ],
-      [ "FlurryAdTargeting", "interface_flurry_ad_targeting.html", null ]
+      [ "FlurryAdTargeting", "interface_flurry_ad_targeting.html", null ],
+      [ "<FlurryDelegate>", "protocol_flurry_delegate-p.html", null ]
     ] ]
 ];

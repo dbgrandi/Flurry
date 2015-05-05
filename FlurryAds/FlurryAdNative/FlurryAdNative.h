@@ -96,7 +96,62 @@
  *
  *  @return YES/NO to indicate if an ad is ready to be displayed.
  */
-@property (nonatomic) BOOL ready;
+@property (nonatomic, readonly) BOOL ready;
+
+
+
+/*!
+ *  @brief Returns if an ad has expired
+ *  @since 6.3.0
+ *
+ *  This method will verify if the ad associated with this native ad object has expired.
+ *  Please call fetch again or discard this native ad object and create a new native object
+ *  when the ad expires
+ *
+ *  @note a native ad object can expire after it is ready, so it is necessary to test for expiry 
+ *  while the native ad is in use.
+ *
+ *  @see #fetchAd for details on retrieving an ad.\n
+ *
+ *  @code
+ 
+    - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    {
+        // map table row to index within an array of prefetched native ads
+        // isAdRow and adIndexForIndexPathRow will be methods defined in your code
+        NSInteger adIx = [self adIndexForIndexPathRow:indexPath.row];
+        if ([self isAdRow:indexPath.row] && [[self.nativeAds objectAtIndex:adIx] ready] == YES)
+        {
+            // AdCell here is a user defined class that will setup a xib view using the assets in a native ad
+            AdCell* adCell = [tableView dequeueReusableCellWithIdentifier:@"FlurryStreamCell" forIndexPath:indexPath];
+ 
+            // check if ad has expired and then show or display ad cell as appropriate
+            if ([[self.nativeAds objectAtIndex:adIx] expired] == YES)
+            {
+                // ad associated with this native ad object has expired, fetch a new ad
+                FlurryAdNative* nativeAd = [self.nativeAds objectAtIndex:adIx];
+                [nativeAd fetchAd];
+ 
+                // hide ad cell until ad is available
+                adCell.hidden = YES;
+            }
+            else
+            {
+                FlurryAdNative* nativeAd = [self.nativeAds objectAtIndex:adIx];
+                [adCell setupWithFlurryNativeAd:nativeAd atPosition:indexPath.row];
+                adCell.hidden = NO;
+            }
+        }
+        else
+        {
+            // setup app content xib cells
+        }
+    }
+ *  @endcode
+ *
+ *  @return YES/NO to indicate if an ad is ready to be displayed.
+ */
+@property (nonatomic, readonly) BOOL expired;
 
 /*!
  *  @brief This property will retrieve the native ad's assets. The assets will be available when the ad is ready.

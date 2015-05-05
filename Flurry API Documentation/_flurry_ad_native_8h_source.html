@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>iOS SDK: FlurryAdNative.h Source File</title>
+<title>iOS SDK: /Users/vamsiprakhya/github/IOSSDK/AdUnityAgent/Classes/FlurryAdsAPI/FlurryAdNative.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -113,27 +113,31 @@ $(document).ready(function(){initNavTree('_flurry_ad_native_8h_source.html','');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a320563dd406a019e4687134c07cdd6ab">   62</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) id&lt;FlurryAdNativeDelegate&gt; <a class="code" href="interface_flurry_ad_native.html#a320563dd406a019e4687134c07cdd6ab" title="Sets the object to receive various delegate methods.">adDelegate</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a7446ceff00ebb1f42db3536f1ef3928c">   99</a></span>&#160;<span class="keyword">@property</span> (nonatomic) BOOL <a class="code" href="interface_flurry_ad_native.html#a7446ceff00ebb1f42db3536f1ef3928c" title="Returns if an ad is currently ready to display for this ad object.">ready</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a7446ceff00ebb1f42db3536f1ef3928c">   99</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) BOOL <a class="code" href="interface_flurry_ad_native.html#a7446ceff00ebb1f42db3536f1ef3928c" title="Returns if an ad is currently ready to display for this ad object.">ready</a>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a65370a089d7814416b4511fdb0b2dd66">  125</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) NSArray *<a class="code" href="interface_flurry_ad_native.html#a65370a089d7814416b4511fdb0b2dd66" title="This property will retrieve the native ad&#39;s assets. The assets will be available when the ad is ready...">assetList</a>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a7336a0cde2dc7ec0f9ae1c432afec4f3">  161</a></span>&#160;<span class="keyword">@property</span> (nonatomic, retain) UIView *<a class="code" href="interface_flurry_ad_native.html#a7336a0cde2dc7ec0f9ae1c432afec4f3" title="The UIView that needs click tracking.">trackingView</a>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a942d35995fc5929bb462a1d1d79025e8">  186</a></span>&#160;<span class="keyword">@property</span> (nonatomic, retain) UIViewController* <a class="code" href="interface_flurry_ad_native.html#a942d35995fc5929bb462a1d1d79025e8" title="This property should be set to the view controller that needs to be used to present a full screen whe...">viewControllerForPresentation</a>;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a591e1fcd4df9766ce6c50f3f6af326ea">  201</a></span>&#160;<span class="keyword">@property</span> (nonatomic, retain) <a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a> *<a class="code" href="interface_flurry_ad_native.html#a591e1fcd4df9766ce6c50f3f6af326ea" title="This property should be used for ad targeting based on parameters such as location, targeting kewords, age and gender.">targeting</a>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;- (id) initWithSpace:(NSString *)space;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;- (void) <a class="code" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9" title="Fetch an ad for this ad object.">fetchAd</a>;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;- (NSArray*) assetListForType:(kAssetType)type;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;- (void) <a class="code" href="interface_flurry_ad_native.html#a14d33a16acf647211905b1a70dcb7ba9" title="Removes the tracking view associated with the ad object.">removeTrackingView</a>;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a8da67a3606163b4f4e0220878d23249e">  154</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) BOOL <a class="code" href="interface_flurry_ad_native.html#a8da67a3606163b4f4e0220878d23249e" title="Returns if an ad has expired.">expired</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a65370a089d7814416b4511fdb0b2dd66">  180</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly) NSArray *<a class="code" href="interface_flurry_ad_native.html#a65370a089d7814416b4511fdb0b2dd66" title="This property will retrieve the native ad&#39;s assets. The assets will be available when the ad is ready...">assetList</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a7336a0cde2dc7ec0f9ae1c432afec4f3">  216</a></span>&#160;<span class="keyword">@property</span> (nonatomic, retain) UIView *<a class="code" href="interface_flurry_ad_native.html#a7336a0cde2dc7ec0f9ae1c432afec4f3" title="The UIView that needs click tracking.">trackingView</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a942d35995fc5929bb462a1d1d79025e8">  241</a></span>&#160;<span class="keyword">@property</span> (nonatomic, retain) UIViewController* <a class="code" href="interface_flurry_ad_native.html#a942d35995fc5929bb462a1d1d79025e8" title="This property should be set to the view controller that needs to be used to present a full screen whe...">viewControllerForPresentation</a>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="code" href="interface_flurry_ad_native.html#a591e1fcd4df9766ce6c50f3f6af326ea">  256</a></span>&#160;<span class="keyword">@property</span> (nonatomic, retain) <a class="code" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a> *<a class="code" href="interface_flurry_ad_native.html#a591e1fcd4df9766ce6c50f3f6af326ea" title="This property should be used for ad targeting based on parameters such as location, targeting kewords, age and gender.">targeting</a>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;- (id) initWithSpace:(NSString *)space;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;- (void) <a class="code" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9" title="Fetch an ad for this ad object.">fetchAd</a>;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;- (NSArray*) assetListForType:(kAssetType)type;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;- (void) <a class="code" href="interface_flurry_ad_native.html#a14d33a16acf647211905b1a70dcb7ba9" title="Removes the tracking view associated with the ad object.">removeTrackingView</a>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <hr class="footer"/><address class="footer"><small>Copyright (c) 2013 Flurry Inc. All rights reserved.

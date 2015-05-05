@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -119,7 +119,7 @@ Instance Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ab768a4afa7539050984dbb68b3ed6da0"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_interstitial.html#ab768a4afa7539050984dbb68b3ed6da0">space</a></td></tr>
-<tr class="memdesc:ab768a4afa7539050984dbb68b3ed6da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read only property that can be used to retrieve the ad space that was passed into an initializer routine. An Ad Space is an area within your app that is designated to display ads. Ad spaces need to be setup and configured on the <a class="el" href="interface_flurry.html">Flurry</a> developer portal.  <a href="#ab768a4afa7539050984dbb68b3ed6da0">More...</a><br/></td></tr>
+<tr class="memdesc:ab768a4afa7539050984dbb68b3ed6da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read only property that can be used to retrieve the ad space that was passed into an initializer routine. An Ad Space is an area within your app that is designated to display ads. Ad spaces need to be setup and configured on the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> developer portal.  <a href="#ab768a4afa7539050984dbb68b3ed6da0">More...</a><br/></td></tr>
 <tr class="separator:ab768a4afa7539050984dbb68b3ed6da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dff6d55f20df82c36a5c76257e0beed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_flurry_ad_targeting.html">FlurryAdTargeting</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_interstitial.html#a8dff6d55f20df82c36a5c76257e0beed">targeting</a></td></tr>
 <tr class="memdesc:a8dff6d55f20df82c36a5c76257e0beed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property should be used for ad targeting based on parameters such as location, targeting kewords, age and gender.  <a href="#a8dff6d55f20df82c36a5c76257e0beed">More...</a><br/></td></tr>
@@ -134,9 +134,11 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides all available methods for displaying interstitial ads. </p>
 <p>Set of methods that allow publishers to configure, target, and deliver ads to their customers.</p>
-<dl class="section note"><dt>Note</dt><dd>This class depends on <a class="el" href="_flurry_8h_source.html">Flurry.h</a>. For information on how to use <a class="el" href="interface_flurry.html">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see <a href="http://support.flurry.com/index.php?title=Publishers">Support Center - Publishers</a>.</dd></dl>
-<dl class="section author"><dt>Author</dt><dd>2009 - 2014 <a class="el" href="interface_flurry.html">Flurry</a>, Inc. All Rights Reserved. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This class depends on <a class="el" href="_flurry_8h_source.html">Flurry.h</a>. For information on how to use <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see <a href="http://support.flurry.com/index.php?title=Publishers">Support Center - Publishers</a>.</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>2009 - 2014 <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>, Inc. All Rights Reserved. </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>6.0.0 </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00028">28</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a4f08d77957ce984819fb05ae27edc212"></a>
 <div class="memitem">
@@ -153,7 +155,7 @@ Properties</h2></td></tr>
 
 <p>Retrieves an ad for this object using the adspace specified in the initializer routine. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
-<p>This method will attempt to retrieve ads for this object's ad space from the <a class="el" href="interface_flurry.html">Flurry</a> server.</p>
+<p>This method will attempt to retrieve ads for this object's ad space from the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> server.</p>
 <dl class="section see"><dt>See Also</dt><dd><br/>
  <a class="el" href="protocol_flurry_ad_interstitial_delegate-p.html#a06dffa200d20497eea9b3b8c58ff5093" title="Invoked when an ad is received for the specified interstitialAd object.">- adInterstitialDidFetchAd: (FlurryAdInterstitialDelegate-p)</a> for details on the notification of ads being received.<br/>
  <a class="el" href="protocol_flurry_ad_interstitial_delegate-p.html#aa487cb1fe1326d04189d8c729ef7fa69" title="Informational callback invoked when there is an ad error.">- adInterstitial:adError:errorDescription: (FlurryAdInterstitialDelegate-p)</a> for details on notification of failure to receive ads from this request.<br/>
@@ -281,6 +283,8 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ad delegate object if set earlier, or nil if never set </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00076">76</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8a2d31b8390aa670ea70df637d580433"></a>
@@ -325,6 +329,8 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>YES/NO to indicate if an ad is ready to be displayed. </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00113">113</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab768a4afa7539050984dbb68b3ed6da0"></a>
@@ -345,9 +351,11 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Read only property that can be used to retrieve the ad space that was passed into an initializer routine. An Ad Space is an area within your app that is designated to display ads. Ad spaces need to be setup and configured on the <a class="el" href="interface_flurry.html">Flurry</a> developer portal. </p>
+<p>Read only property that can be used to retrieve the ad space that was passed into an initializer routine. An Ad Space is an area within your app that is designated to display ads. Ad spaces need to be setup and configured on the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> developer portal. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The ad space string value. </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00036">36</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
 
 </div>
 </div>
@@ -380,10 +388,12 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ad targeting that was orignally set or nil if never set. </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_interstitial_8h_source.html#l00051">51</a> of file <a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a></li>
+<li>/Users/vamsiprakhya/github/IOSSDK/AdUnityAgent/Classes/FlurryAdsAPI/<a class="el" href="_flurry_ad_interstitial_8h_source.html">FlurryAdInterstitial.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

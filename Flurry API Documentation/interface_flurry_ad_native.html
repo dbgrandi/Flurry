@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">6.2.0</span>
+   &#160;<span id="projectnumber">6.3.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -122,7 +122,7 @@ Instance Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a89286ea9a48e2576afde64bf41436e12"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a89286ea9a48e2576afde64bf41436e12">space</a></td></tr>
-<tr class="memdesc:a89286ea9a48e2576afde64bf41436e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read only property that can be used to retrieve the ad space that was passed into an initializer routine. An Ad Space is an area within your app that is designated to display ads. Ad spaces need to be setup and configured on the <a class="el" href="interface_flurry.html">Flurry</a> developer portal.  <a href="#a89286ea9a48e2576afde64bf41436e12">More...</a><br/></td></tr>
+<tr class="memdesc:a89286ea9a48e2576afde64bf41436e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read only property that can be used to retrieve the ad space that was passed into an initializer routine. An Ad Space is an area within your app that is designated to display ads. Ad spaces need to be setup and configured on the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> developer portal.  <a href="#a89286ea9a48e2576afde64bf41436e12">More...</a><br/></td></tr>
 <tr class="separator:a89286ea9a48e2576afde64bf41436e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a320563dd406a019e4687134c07cdd6ab"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_flurry_ad_native_delegate-p.html">FlurryAdNativeDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a320563dd406a019e4687134c07cdd6ab">adDelegate</a></td></tr>
 <tr class="memdesc:a320563dd406a019e4687134c07cdd6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the object to receive various delegate methods.  <a href="#a320563dd406a019e4687134c07cdd6ab">More...</a><br/></td></tr>
@@ -130,6 +130,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a7446ceff00ebb1f42db3536f1ef3928c"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a7446ceff00ebb1f42db3536f1ef3928c">ready</a></td></tr>
 <tr class="memdesc:a7446ceff00ebb1f42db3536f1ef3928c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if an ad is currently ready to display for this ad object.  <a href="#a7446ceff00ebb1f42db3536f1ef3928c">More...</a><br/></td></tr>
 <tr class="separator:a7446ceff00ebb1f42db3536f1ef3928c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da67a3606163b4f4e0220878d23249e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a8da67a3606163b4f4e0220878d23249e">expired</a></td></tr>
+<tr class="memdesc:a8da67a3606163b4f4e0220878d23249e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if an ad has expired.  <a href="#a8da67a3606163b4f4e0220878d23249e">More...</a><br/></td></tr>
+<tr class="separator:a8da67a3606163b4f4e0220878d23249e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65370a089d7814416b4511fdb0b2dd66"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_flurry_ad_native.html#a65370a089d7814416b4511fdb0b2dd66">assetList</a></td></tr>
 <tr class="memdesc:a65370a089d7814416b4511fdb0b2dd66"><td class="mdescLeft">&#160;</td><td class="mdescRight">This property will retrieve the native ad's assets. The assets will be available when the ad is ready.  <a href="#a65370a089d7814416b4511fdb0b2dd66">More...</a><br/></td></tr>
 <tr class="separator:a65370a089d7814416b4511fdb0b2dd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,9 +149,11 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides all available methods for displaying native ads. </p>
 <p>Set of methods that allow publishers to configure, target, and deliver native ads to their customers.</p>
-<p>For information on how to use <a class="el" href="interface_flurry.html">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see <a href="http://support.flurry.com/index.php?title=Publishers">Support Center - Publishers</a>.</p>
-<dl class="section author"><dt>Author</dt><dd>2009 - 2014 <a class="el" href="interface_flurry.html">Flurry</a>, Inc. All Rights Reserved. </dd></dl>
+<p>For information on how to use <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>'s Ads SDK to attract high-quality users and monetize your user base see <a href="http://support.flurry.com/index.php?title=Publishers">Support Center - Publishers</a>.</p>
+<dl class="section author"><dt>Author</dt><dd>2009 - 2014 <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a>, Inc. All Rights Reserved. </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>6.0.0 </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00027">27</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a59bfc8aab67569dee1fc9965ddab3033"></a>
 <div class="memitem">
@@ -321,6 +326,8 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00062">62</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a65370a089d7814416b4511fdb0b2dd66"></a>
@@ -359,6 +366,70 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>Array of <a class="el" href="interface_flurry_ad_native_asset.html" title="Provides all available methods for displaying native ad assets.">FlurryAdNativeAsset</a> objects </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00180">180</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8da67a3606163b4f4e0220878d23249e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) expired</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns if an ad has expired. </p>
+<dl class="section since"><dt>Since</dt><dd>6.3.0</dd></dl>
+<p>This method will verify if the ad associated with this native ad object has expired. Please call fetch again or discard this native ad object and create a new native object when the ad expires</p>
+<dl class="section note"><dt>Note</dt><dd>a native ad object can expire after it is ready, so it is necessary to test for expiry while the native ad is in use.</dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9" title="Fetch an ad for this ad object.">- fetchAd</a> for details on retrieving an ad.<br/>
+</dd></dl>
+<div class="fragment"><div class="line">- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// map table row to index within an array of prefetched native ads</span></div>
+<div class="line">    <span class="comment">// isAdRow and adIndexForIndexPathRow will be methods defined in your code</span></div>
+<div class="line">    NSInteger adIx = [<span class="keyword">self</span> adIndexForIndexPathRow:indexPath.row];</div>
+<div class="line">    <span class="keywordflow">if</span> ([<span class="keyword">self</span> isAdRow:indexPath.row] &amp;&amp; [[<span class="keyword">self</span>.nativeAds objectAtIndex:adIx] <a class="code" href="interface_flurry_ad_native.html#a7446ceff00ebb1f42db3536f1ef3928c" title="Returns if an ad is currently ready to display for this ad object.">ready</a>] == YES)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// AdCell here is a user defined class that will setup a xib view using the assets in a native ad</span></div>
+<div class="line">        AdCell* adCell = [tableView dequeueReusableCellWithIdentifier:<span class="stringliteral">@&quot;FlurryStreamCell&quot;</span> forIndexPath:indexPath];</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// check if ad has expired and then show or display ad cell as appropriate</span></div>
+<div class="line">        <span class="keywordflow">if</span> ([[<span class="keyword">self</span>.nativeAds objectAtIndex:adIx] <a class="code" href="interface_flurry_ad_native.html#a8da67a3606163b4f4e0220878d23249e" title="Returns if an ad has expired.">expired</a>] == YES)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// ad associated with this native ad object has expired, fetch a new ad</span></div>
+<div class="line">            <a class="code" href="interface_flurry_ad_native.html" title="Provides all available methods for displaying native ads.">FlurryAdNative</a>* nativeAd = [<span class="keyword">self</span>.nativeAds objectAtIndex:adIx];</div>
+<div class="line">            [nativeAd <a class="code" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9" title="Fetch an ad for this ad object.">fetchAd</a>];</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// hide ad cell until ad is available</span></div>
+<div class="line">            adCell.hidden = YES;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">        {</div>
+<div class="line">            <a class="code" href="interface_flurry_ad_native.html" title="Provides all available methods for displaying native ads.">FlurryAdNative</a>* nativeAd = [<span class="keyword">self</span>.nativeAds objectAtIndex:adIx];</div>
+<div class="line">            [adCell setupWithFlurryNativeAd:nativeAd atPosition:indexPath.row];</div>
+<div class="line">            adCell.hidden = NO;</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// setup app content xib cells</span></div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>YES/NO to indicate if an ad is ready to be displayed. </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00154">154</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7446ceff00ebb1f42db3536f1ef3928c"></a>
@@ -374,7 +445,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -404,6 +475,8 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>YES/NO to indicate if an ad is ready to be displayed. </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00099">99</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a89286ea9a48e2576afde64bf41436e12"></a>
@@ -424,9 +497,11 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Read only property that can be used to retrieve the ad space that was passed into an initializer routine. An Ad Space is an area within your app that is designated to display ads. Ad spaces need to be setup and configured on the <a class="el" href="interface_flurry.html">Flurry</a> developer portal. </p>
+<p>Read only property that can be used to retrieve the ad space that was passed into an initializer routine. An Ad Space is an area within your app that is designated to display ads. Ad spaces need to be setup and configured on the <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> developer portal. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The ad space string value. </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00038">38</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -453,6 +528,8 @@ Properties</h2></td></tr>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="interface_flurry_ad_targeting.html" title="Provides available methods for targeting.">FlurryAdTargeting</a> for details on the assets including asset names.<br/>
 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The Ad Targeting object that was orignally set or nil if never set. </dd></dl>
+
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00256">256</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
 
 </div>
 </div>
@@ -495,6 +572,8 @@ Properties</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>View tracked by this ad object or nil if a tracking view has not been set on this object. </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00216">216</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a942d35995fc5929bb462a1d1d79025e8"></a>
@@ -525,10 +604,12 @@ Properties</h2></td></tr>
 <div class="line">[nativeAd <a class="code" href="interface_flurry_ad_native.html#a57bce4e4583329c78202193be48e6ae9" title="Fetch an ad for this ad object.">fetchAd</a>];</div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>UIViewcontroller used for presentation of a full screen or nil if a presenting view controller has not been set </dd></dl>
 
+<p>Definition at line <a class="el" href="_flurry_ad_native_8h_source.html#l00241">241</a> of file <a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a></li>
+<li>/Users/vamsiprakhya/github/IOSSDK/AdUnityAgent/Classes/FlurryAdsAPI/<a class="el" href="_flurry_ad_native_8h_source.html">FlurryAdNative.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
