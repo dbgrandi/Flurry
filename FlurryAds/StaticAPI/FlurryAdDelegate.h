@@ -328,14 +328,6 @@ typedef enum {
  */
 - (NSString *)appSpotJumptapMediumRectangleAdSpotID;
 
-/*!
- *  @brief The Greystripe Application Id.
- *  @since 4.0.0
- * 
- *  This is the id for your app as set in Greystripe 
- */
-- (NSString *)appSpotGreystripeApplicationID;
-
 
 #pragma mark Information
 

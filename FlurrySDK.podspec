@@ -4,7 +4,7 @@ EOT
 
 Pod::Spec.new do |s|
   s.name     = 'FlurrySDK'
-  s.version  = '6.2.0'
+  s.version  = '6.4.0'
   s.license  = { :type => 'Commercial', :text => license }
   s.summary  = 'FlurrySDK for analytics tracking and reporting. Also Ads included'
   s.homepage = 'http://www.flurry.com'
@@ -15,12 +15,22 @@ Pod::Spec.new do |s|
   s.default_subspec = 'FlurrySDK'
 
   s.subspec 'FlurrySDK' do |ss|
+    ss.source_files = 'Flurry/Flurry.h'
+    # To ensure frameworks really used by lib you can use:
+    # SystemConfiguration: nm -m Flurry/*.a | grep -v 'non-external' | grep _SC
+    # UIKit used:          nm -m Flurry/*.a | grep -v 'non-external' | grep _UI
+    # Security used:       nm -m Flurry/*.a | grep -v 'non-external' | grep _Sec
+    ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
+    ss.vendored_libraries = "Flurry/libFlurry_#{s.version}.a"
+  end
+
+  s.subspec 'FlurryWatchSDK' do |ss|
     ss.source_files = 'Flurry/*.h'
     # To ensure frameworks really used by lib you can use:
     # SystemConfiguration: nm -m Flurry/*.a | grep -v 'non-external' | grep _SC
     # UIKit used:          nm -m Flurry/*.a | grep -v 'non-external' | grep _UI
     # Security used:       nm -m Flurry/*.a | grep -v 'non-external' | grep _Sec
-    ss.frameworks = 'CoreGraphics', 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
+    ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
     ss.vendored_libraries = "Flurry/libFlurry_#{s.version}.a"
   end
 

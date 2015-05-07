@@ -6,6 +6,7 @@ var interface_flurry_ad_native =
     [ "removeTrackingView", "interface_flurry_ad_native.html#a14d33a16acf647211905b1a70dcb7ba9", null ],
     [ "adDelegate", "interface_flurry_ad_native.html#a320563dd406a019e4687134c07cdd6ab", null ],
     [ "assetList", "interface_flurry_ad_native.html#a65370a089d7814416b4511fdb0b2dd66", null ],
+    [ "expired", "interface_flurry_ad_native.html#a8da67a3606163b4f4e0220878d23249e", null ],
     [ "ready", "interface_flurry_ad_native.html#a7446ceff00ebb1f42db3536f1ef3928c", null ],
     [ "space", "interface_flurry_ad_native.html#a89286ea9a48e2576afde64bf41436e12", null ],
     [ "targeting", "interface_flurry_ad_native.html#a591e1fcd4df9766ce6c50f3f6af326ea", null ],
