@@ -12,5 +12,6 @@ var annotated =
     [ "FlurryAdNativeStyle", "interface_flurry_ad_native_style.html", "interface_flurry_ad_native_style" ],
     [ "FlurryAds", "interface_flurry_ads.html", null ],
     [ "FlurryAdTargeting", "interface_flurry_ad_targeting.html", "interface_flurry_ad_targeting" ],
-    [ "<FlurryDelegate>", "protocol_flurry_delegate-p.html", "protocol_flurry_delegate-p" ]
+    [ "<FlurryDelegate>", "protocol_flurry_delegate-p.html", "protocol_flurry_delegate-p" ],
+    [ "FlurryWatch", "interface_flurry_watch.html", null ]
 ];
