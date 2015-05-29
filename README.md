@@ -3,7 +3,7 @@ Flurry
 
 Latest Flurry SDK
 
-To use 6.4.0 or higher FlurrySDK from cocoapods, add this line in your Pods file:
+To use 6.5.0 or higher FlurrySDK from cocoapods, add this line in your Pods file:
 
 ```
   pod 'FlurrySDK', '~>6.5'
