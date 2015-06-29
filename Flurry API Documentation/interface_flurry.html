@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="flurry_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">iOS SDK
-   &#160;<span id="projectnumber">6.5.0</span>
+   &#160;<span id="projectnumber">6.6.0</span>
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -112,10 +112,10 @@ Class Methods</h2></td></tr>
 <tr class="memdesc:a0033dc0a7acc00c9a10b19655be47aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>.  <a href="#a0033dc0a7acc00c9a10b19655be47aac">More...</a><br/></td></tr>
 <tr class="separator:a0033dc0a7acc00c9a10b19655be47aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a90a2dfc96d12fb3b7990e2ff1c6e0da6">activeSessionExists</a></td></tr>
-<tr class="memdesc:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>.  <a href="#a90a2dfc96d12fb3b7990e2ff1c6e0da6">More...</a><br/></td></tr>
+<tr class="memdesc:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a session currently exists and is active.  <a href="#a90a2dfc96d12fb3b7990e2ff1c6e0da6">More...</a><br/></td></tr>
 <tr class="separator:a90a2dfc96d12fb3b7990e2ff1c6e0da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f496e071482df2d240acbb6c2ddb556"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a2f496e071482df2d240acbb6c2ddb556">getSessionID</a></td></tr>
-<tr class="memdesc:a2f496e071482df2d240acbb6c2ddb556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>.  <a href="#a2f496e071482df2d240acbb6c2ddb556">More...</a><br/></td></tr>
+<tr class="memdesc:a2f496e071482df2d240acbb6c2ddb556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the session ID of the current active session.  <a href="#a2f496e071482df2d240acbb6c2ddb556">More...</a><br/></td></tr>
 <tr class="separator:a2f496e071482df2d240acbb6c2ddb556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba0e3de32ab9d494617dfe4cb2888fa"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_flurry.html#a3ba0e3de32ab9d494617dfe4cb2888fa">setDelegate:</a></td></tr>
 <tr class="memdesc:a3ba0e3de32ab9d494617dfe4cb2888fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> delegate for callback on session creation.  <a href="#a3ba0e3de32ab9d494617dfe4cb2888fa">More...</a><br/></td></tr>
@@ -251,12 +251,12 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>. </p>
+<p>Returns true if a session currently exists and is active. </p>
 <dl class="section since"><dt>Since</dt><dd>6.0.0</dd></dl>
 <div class="fragment"><div class="line">   - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</div>
 <div class="line">{</div>
 <div class="line"><span class="comment">// Optional Flurry startup methods</span></div>
-<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a90a2dfc96d12fb3b7990e2ff1c6e0da6" title="Start a Flurry session for the project denoted by apiKey.">activeSessionExists</a>:<span class="stringliteral">@&quot;YOUR_API_KEY&quot;</span> withOptions:launchOptions];</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a90a2dfc96d12fb3b7990e2ff1c6e0da6" title="Returns true if a session currently exists and is active.">activeSessionExists</a>];</div>
 <div class="line"><span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
@@ -461,12 +461,12 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Start a <a class="el" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> session for the project denoted by <code>apiKey</code>. </p>
+<p>Returns the session ID of the current active session. </p>
 <dl class="section since"><dt>Since</dt><dd>6.3.0</dd></dl>
 <div class="fragment"><div class="line">   - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions</div>
 <div class="line">{</div>
 <div class="line"><span class="comment">// Optional Flurry startup methods</span></div>
-<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a2f496e071482df2d240acbb6c2ddb556" title="Start a Flurry session for the project denoted by apiKey.">getSessionID</a>];</div>
+<div class="line">[<a class="code" href="interface_flurry.html" title="Provides all available methods for defining and reporting Analytics from use of your app...">Flurry</a> <a class="code" href="interface_flurry.html#a2f496e071482df2d240acbb6c2ddb556" title="Returns the session ID of the current active session.">getSessionID</a>];</div>
 <div class="line"><span class="comment">// ....</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
@@ -1471,7 +1471,7 @@ Class Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/akshayb/Downloads/Flurry.Release.6.5.0/Flurry/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
+<li>/Users/vamsiprakhya/github/IOSSDK/AdUnityAgent/Classes/FlurryAPI/<a class="el" href="_flurry_8h_source.html">Flurry.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
