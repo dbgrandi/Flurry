@@ -12,6 +12,5 @@ var searchData=
   ['flurryadnativestyle',['FlurryAdNativeStyle',['../interface_flurry_ad_native_style.html',1,'']]],
   ['flurryads',['FlurryAds',['../interface_flurry_ads.html',1,'']]],
   ['flurryadtargeting',['FlurryAdTargeting',['../interface_flurry_ad_targeting.html',1,'']]],
-  ['flurrydelegate_2dp',['FlurryDelegate-p',['../protocol_flurry_delegate-p.html',1,'']]],
-  ['flurrywatch',['FlurryWatch',['../interface_flurry_watch.html',1,'']]]
+  ['flurrydelegate_2dp',['FlurryDelegate-p',['../protocol_flurry_delegate-p.html',1,'']]]
 ];
