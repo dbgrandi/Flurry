@@ -15,7 +15,10 @@ Pod::Spec.new do |s|
   s.default_subspec = 'FlurrySDK'
 
   s.subspec 'FlurrySDK' do |ss|
-    ss.source_files = 'Flurry/Flurry.h'
+    ss.source_files = [
+      'Flurry/Flurry.h',
+      'Flurry/Empty.m'
+    ]
     # To ensure frameworks really used by lib you can use:
     # SystemConfiguration: nm -m Flurry/*.a | grep -v 'non-external' | grep _SC
     # UIKit used:          nm -m Flurry/*.a | grep -v 'non-external' | grep _UI
@@ -25,7 +28,10 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'FlurryWatchSDK' do |ss|
-    ss.source_files = 'Flurry/*.h'
+    ss.source_files = [
+      'Flurry/*.h',
+      'Flurry/Empty.m'
+    ]
     # To ensure frameworks really used by lib you can use:
     # SystemConfiguration: nm -m Flurry/*.a | grep -v 'non-external' | grep _SC
     # UIKit used:          nm -m Flurry/*.a | grep -v 'non-external' | grep _UI
@@ -35,7 +41,10 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'FlurryAds' do |ss|
-    ss.source_files = 'FlurryAds/**/*.h'
+    ss.source_files = [
+      'FlurryAds/**/*.h',
+      'Flurry/Empty.m'
+    ]
     # To ensure lib really used by lib you can use:
     # libz.dylib:  nm -m FlurryAds/*.a | grep -v 'non-external' | grep _inflate
     ss.libraries = "z"
