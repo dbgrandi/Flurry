@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['sessionproperties_3a',['sessionProperties:',['../interface_flurry.html#ab1596f7a52079f1f36df255c8fd930ef',1,'Flurry']]],
   ['setaddelegate_3a',['setAdDelegate:',['../interface_flurry_ads.html#a647e20365b75b7f0e4337660aa51b116',1,'FlurryAds']]],
   ['setage_3a',['setAge:',['../interface_flurry.html#a55692f576c987dc0ed73a2ba4aa31710',1,'Flurry']]],
   ['setappversion_3a',['setAppVersion:',['../interface_flurry.html#a4ccd9b24965b9f514f525a9eb15d071d',1,'Flurry']]],

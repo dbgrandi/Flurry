@@ -13,6 +13,8 @@ var searchData=
   ['addcustomadnetwork_3awithproperties_3a',['addCustomAdNetwork:withProperties:',['../interface_flurry_ads.html#a063d0cab730df7a5f632d4744c2c435b',1,'FlurryAds']]],
   ['addorigin_3awithversion_3a',['addOrigin:withVersion:',['../interface_flurry.html#a0051bbff585708b7b17dfbd10f485abd',1,'Flurry']]],
   ['addorigin_3awithversion_3awithparameters_3a',['addOrigin:withVersion:withParameters:',['../interface_flurry.html#a928b07baaee4262f675f4727ba0938b5',1,'Flurry']]],
+  ['addsessionorigin_3a',['addSessionOrigin:',['../interface_flurry.html#a029a000693aeb3302b861229126827a3',1,'Flurry']]],
+  ['addsessionorigin_3awithdeeplink_3a',['addSessionOrigin:withDeepLink:',['../interface_flurry.html#ae957b76d1c81276e9743977a75384821',1,'Flurry']]],
   ['adinterstitial_3aaderror_3aerrordescription_3a',['adInterstitial:adError:errorDescription:',['../protocol_flurry_ad_interstitial_delegate-p.html#aa487cb1fe1326d04189d8c729ef7fa69',1,'FlurryAdInterstitialDelegate-p']]],
   ['adinterstitialdiddismiss_3a',['adInterstitialDidDismiss:',['../protocol_flurry_ad_interstitial_delegate-p.html#a8ca9e3d0a07aa8fd069062eeb2fe2903',1,'FlurryAdInterstitialDelegate-p']]],
   ['adinterstitialdidfetchad_3a',['adInterstitialDidFetchAd:',['../protocol_flurry_ad_interstitial_delegate-p.html#a06dffa200d20497eea9b3b8c58ff5093',1,'FlurryAdInterstitialDelegate-p']]],
