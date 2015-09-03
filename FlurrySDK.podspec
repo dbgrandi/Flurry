@@ -4,7 +4,7 @@ EOT
 
 Pod::Spec.new do |s|
   s.name     = 'FlurrySDK'
-  s.version  = '6.7.1-beta1'
+  s.version  = '7.0.0'
   s.license  = { :type => 'Commercial', :text => license }
   s.summary  = 'FlurrySDK for analytics tracking and reporting. Also Ads included'
   s.homepage = 'http://www.flurry.com'
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     # UIKit used:          nm -m Flurry/*.a | grep -v 'non-external' | grep _UI
     # Security used:       nm -m Flurry/*.a | grep -v 'non-external' | grep _Sec
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = "Flurry/libFlurry_6.7.0.a"
+    ss.vendored_libraries = "Flurry/libFlurry_7.0.0.a"
   end
 
   s.subspec 'FlurryWatchSDK' do |ss|
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
     # UIKit used:          nm -m Flurry/*.a | grep -v 'non-external' | grep _UI
     # Security used:       nm -m Flurry/*.a | grep -v 'non-external' | grep _Sec
     ss.frameworks = 'Foundation', 'SystemConfiguration', 'UIKit', 'Security'
-    ss.vendored_libraries = "Flurry/libFlurry_6.7.0.a"
+    ss.vendored_libraries = "Flurry/libFlurry_7.0.0.a"
   end
 
   s.subspec 'FlurryAds' do |ss|
@@ -58,8 +58,14 @@ Pod::Spec.new do |s|
     # AdSupport used:     nm -m FlurryAds/*.a | grep -v 'non-external' | grep _AS
     # StoreKit not used?: nm -m FlurryAds/*.a | grep -v 'non-external' | grep _SK
     ss.weak_frameworks = 'AdSupport', 'StoreKit'
-    ss.vendored_libraries = "FlurryAds/libFlurryAds_6.7.0.a"
+    ss.vendored_libraries = "FlurryAds/libFlurryAds_7.0.0.a"
     ss.dependency 'FlurrySDK/FlurrySDK'
   end
 
+  s.subspec 'FlurryTumblr' do |ss|
+    ss.source_files = [
+      'FlurryTumblrAPI/*.h',
+    ]
+    ss.dependency 'FlurrySDK/FlurrySDK'
+  end
 end
